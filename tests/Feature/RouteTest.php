@@ -15,8 +15,6 @@ class RouteTest extends TestCase
      */
     public function testRoutes()
     {
-        $appURL = env('APP_URL');
-
         $urls = [
             '/',
             '/apply',
@@ -25,25 +23,18 @@ class RouteTest extends TestCase
             '/what-we-do'
         ];
 
-        echo  PHP_EOL;
-
         foreach ($urls as $url) {
             $response = $this->get($url);
             if((int)$response->status() !== 200){
-                echo  $appURL . $url . ' (FAILED) did not return a 200.';
                 $this->assertTrue(false);
             } else {
-                echo $appURL . $url . ' (success ?)';
                 $this->assertTrue(true);
             }
-            echo  PHP_EOL;
         }
 
     }
 
     public function testRedirects() {
-        $appURL = env('APP_URL');
-
         $original = [
             '/about',
             '/contact'
@@ -54,19 +45,15 @@ class RouteTest extends TestCase
             '/apply'
         ];
 
-        echo PHP_EOL;
+    
 
         for ($i = 0; $i < sizeof($original); $i++) {
             $response = $this->get($original[$i]);
-
-            if(!$response->assertRedirect()){
-                echo  $appURL . $original[$i] . ' (FAILED) did not return a 200.';
+            if(!$response->assertRedirect()){             
                 $this->assertTrue(false);
             } else {
-                echo $appURL . $original[$i] . ' (success ?), redirected to ' . $appURL . $redirected[$i];
                 $this->assertTrue(true);
             }
-            echo  PHP_EOL;
         }
     }
 }
