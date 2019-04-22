@@ -16,8 +16,9 @@ class CreateLeaderboardTable extends Migration
         Schema::create('leaderboard', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('employee_name');
+            $table->double('cpo')->nullable();
+            $table->double('average_order_size')->nullable();
             $table->integer('number_of_sales')->nullable();
-            $table->boolean('record_holder')->default(false);
             $table->timestamps();
         });
     }

@@ -1,5 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.alt')
 @section('title', 'Dashboard')
 @section('content')
-<div>Hel</div>
 @endsection
