@@ -10,6 +10,7 @@
     </head>
     <body>
     	<div id="app">
+            <div class="header-hero-bg">
     	@include('layouts.header')	
         @yield('content')
         @include('layouts.footer')
