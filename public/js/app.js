@@ -49144,15 +49144,27 @@ if (token) {
 
 /***/ }),
 
+/***/ "./resources/sass/pages/home.scss":
+/*!****************************************!*\
+  !*** ./resources/sass/pages/home.scss ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/lib/loader.js):\nError: ENOENT: no such file or directory, open '/Users/988244/Documents/sorin/evanston-empire/resources/sass/pages/home.scss'\n    at runLoaders (/Users/988244/Documents/sorin/evanston-empire/node_modules/webpack/lib/NormalModule.js:301:20)\n    at /Users/988244/Documents/sorin/evanston-empire/node_modules/loader-runner/lib/LoaderRunner.js:367:11\n    at /Users/988244/Documents/sorin/evanston-empire/node_modules/loader-runner/lib/LoaderRunner.js:203:19\n    at process.nextTick (/Users/988244/Documents/sorin/evanston-empire/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:73:15)\n    at processTicksAndRejections (internal/process/next_tick.js:74:9)");
+
+/***/ }),
+
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
-  \*************************************************************/
+/*!**********************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/pages/home.scss ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /Users/988244/Documents/sorin/evanston-empire/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/988244/Documents/sorin/evanston-empire/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/988244/Documents/sorin/evanston-empire/resources/sass/app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! /Users/988244/Documents/sorin/evanston-empire/resources/sass/pages/home.scss */"./resources/sass/pages/home.scss");
 
 
 /***/ })
