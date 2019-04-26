@@ -1,17 +1,31 @@
+.jumbotron {
+  background-color: transparent !important;
+}
+
 .hero {
   color: $main-black;
 	.title {
+    max-width: 414px;
     font-size: 68px;
+    &--light {
+      color: $white;
+    }
 	}
 	.subtitle {
+    max-width: 414px;
     font-size: 33px;
-	}
-	.light {
-		color: $white;
+    &--light {
+      color: $white;
+    }
 	}
   .btn-light {
+    font-size: 21px;
     text-transform: uppercase;
     background-color: $white;
+    letter-spacing: 1.008px;
+    //border-radius: 48px;
+    width: 225px;
+height: 67px;
   }
 }
 
@@ -23,10 +37,11 @@
   color: $main-black;
   .section-heading {
     .title {
-      font-size: 30px;
+      font-size: 20px;
     }
     .border-bottom {
-      border-bottom: 1px solid $border-purple;
+      width: 8%;
+      border-bottom: 2px solid $border-purple !important;
     }
   }
   .section-content {
@@ -41,3 +56,5 @@
     }
   }
 }
+
+

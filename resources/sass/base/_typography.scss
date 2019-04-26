@@ -1,7 +1,18 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700');
 
 // Base variables
 $font-family-sans-serif: "Nunito Sans", sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
+
+// Weights
+.weight-regular {
+	font-weight: 400;
+}
+.weight-semibold {
+	font-weight: 600;
+}
+.weight-bold {
+	font-weight: 700;
+}
