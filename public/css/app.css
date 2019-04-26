@@ -1,24 +1,50 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito+Sans);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700);@charset "UTF-8";
+
+.weight-regular {
+  font-weight: 400;
+}
+
+.weight-semibold {
+  font-weight: 600;
+}
+
+.weight-bold {
+  font-weight: 700;
+}
+
+.jumbotron {
+  background-color: transparent !important;
+}
 
 .hero {
   color: #333;
 }
 
 .hero .title {
+  max-width: 414px;
   font-size: 68px;
 }
 
+.hero .title--light {
+  color: #fff;
+}
+
 .hero .subtitle {
+  max-width: 414px;
   font-size: 33px;
 }
 
-.hero .light {
+.hero .subtitle--light {
   color: #fff;
 }
 
 .hero .btn-light {
+  font-size: 21px;
   text-transform: uppercase;
   background-color: #fff;
+  letter-spacing: 1.008px;
+  width: 225px;
+  height: 67px;
 }
 
 .link {
@@ -30,11 +56,12 @@
 }
 
 .main-content .section-heading .title {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .main-content .section-heading .border-bottom {
-  border-bottom: 1px solid #DC90DC;
+  width: 8%;
+  border-bottom: 2px solid #DC90DC !important;
 }
 
 .main-content .section-content .title {
@@ -47,6 +74,10 @@
 
 .main-content .section-content .link {
   font-size: 20px;
+}
+
+.header-wrapper .nav-link {
+  color: #000 !important;
 }
 
 /*!
