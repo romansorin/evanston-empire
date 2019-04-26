@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLeaderboardTable extends Migration
+class CreateLeaderboardsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateLeaderboardTable extends Migration
      */
     public function up()
     {
-        Schema::create('leaderboard', function (Blueprint $table) {
+        Schema::create('leaderboards', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('employee_name');
             $table->double('cpo')->nullable();
@@ -30,6 +30,6 @@ class CreateLeaderboardTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('leaderboard');
+        Schema::dropIfExists('leaderboards');
     }
 }

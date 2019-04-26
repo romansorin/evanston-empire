@@ -24,7 +24,8 @@ class LeaderboardController extends Controller
      */
     public function index()
     {
-        return view('leaderboard.index');
+        $leaderboard = Leaderboard::simplePaginate(15);
+        return view('leaderboard.index', compact('leaderboard'));
     }
 
     /**
