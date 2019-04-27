@@ -1,15 +1,17 @@
+/* Colors */
+
 .header-hero-bg {
-  background: #F486D1;
   /* fallback for old browsers */
+  background: #F486D1;
   background-image: linear-gradient(-38.33deg, #C452F5 0%, #F486D1 100%);
+}
+
+.header-hero-bg .navbar-nav .nav-link {
+  color: #fff !important;
 }
 
 .hero {
   height: 535px;
-}
-
-.navbar-nav .nav-link {
-  color: #fff !important;
 }
 
 #what-we-do-info {
