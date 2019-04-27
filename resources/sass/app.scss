@@ -1,4 +1,10 @@
-@import 'base/module';
-@import 'layouts/module';
-@import 'pages/module';
-@import 'vendor/module';
+// Third-party
+@import "vendor/bootstrap";
+@import "vendor/normalize";
+@import "vendor/iconic";
+
+// Partials
+@import "utilities/all";
+@import "base/all";
+@import "components/all";
+@import "layout/all";
