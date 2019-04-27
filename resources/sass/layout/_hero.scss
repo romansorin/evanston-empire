@@ -1,0 +1,35 @@
+@import "../components/buttons";
+
+.jumbotron {
+  background-color: transparent !important;
+}
+
+.hero {
+  margin-top: 35px;
+  margin-bottom: 110px !important;
+  color: $main-black;
+  .title {
+        font-size: 54px;
+        line-height: .95;
+        text-shadow: 0px 4px 9px rgba(0, 0, 0, 0.13);
+
+        &--light {
+            color: $white;
+        }
+    }
+
+    .subtitle {
+        width: 425px;
+        font-size: 22px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+        &--light {
+            color: $white;
+        }
+    }
+
+    .btn-light {
+        @extend %cta-btn-light;
+    }
+}

@@ -8,8 +8,8 @@
 				<h1>About Us</h1>
 			</div>
 			<div class="col-6">
-				<h2>We are Vector, a small team located in Evanston, Illinois</h2>
-				<p>asdasdasdasdasdsadasdasdasdsadsadsadasdas</p>
+				<h2>We are the Evanston Empire, the premier summer work opportunity for students in the Evanston area</h2>
+				<p>The Evanston Empire is committed to providing an exceptional work opportunity for students hungry to grow both personally and professionally. We aim to create future leaders by training, challenging, support, and mentoring students who are looking to distinguish themselves from their peer group.</p>
 			</div>
 		</div>
 	</div>

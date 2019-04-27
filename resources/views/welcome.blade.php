@@ -5,7 +5,7 @@
 @section('title', 'Home')
 @section('content')
 <div class="container">
-	<div class="jumbotron hero">
+	<div class="jumbotron hero pl-0">
 		<div class="row">
 			<div class="col-6">
 				<h1 class="title title--light weight-semibold">Your <span class="weight-bold">next job</span><br/>is here.</h1>
@@ -23,34 +23,36 @@
 	<section class="main-content">
 		<div class="row section-heading">
 			<div class="col-12 text-center">
-				<h3 class="title weight--semibold">Explore Our Opportunities</h3>
+				<h3 class="title weight-semibold">Explore Our Opportunities</h3>
 				<div class="border-bottom ml-auto mr-auto"></div>
 			</div>
 		</div>
-		<div class="row section-content">
+		<div class="row section-content" id="explore-opportunities-card-wrapper">
+			@for ($i = 0; $i < 4; $i++)
 			<div class="col-sm-3">
-				<div class="card">
+				<div class="card opportunity-card">
 					<div class="card-body">
 						<h5 class="card-title">Special title treatment</h5>
-						<a href="#" class="link-blue">Go somewhere</a>
+						<a href="#" class="weight-semibold">Go somewhere</a>
 					</div>
 				</div>
 			</div>
+			@endfor
 		</div>
 	</section>
 	<section class="main-content">
 		<div class="row section-heading">
 			<div class="col-12 text-center">
-				<h3 class="title weight--semibold">What We Do</h3>
+				<h3 class="title weight-semibold">What We Do</h3>
 				<div class="border-bottom ml-auto mr-auto"></div>
-			</div>
-			<div class="col-12 text-center">
-				<blockquote class="blockquote">
-					<p class="blockquote-text"><i>Profit is the ignition system of your economic engine.</i></p>
-				</blockquote>
 			</div>
 		</div>
 		<div class="row section-content">
+				<div class="col-12 text-center">
+						<blockquote class="blockquote ml-auto mr-auto">
+							<p class="blockquote-text weight-light--italic">Profit is the ignition system of your economic engine.</p>
+						</blockquote>
+					</div>
 			<div class="col-6">
 				<h3 class="title">Make your success as simple as you can clap</h3>
 				<p class="subtitle">Writing extra info here to simulate these types of text blocks to illustrate the idea of more content to sell someone on a product. And more, for a fourth line</p>

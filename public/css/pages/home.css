@@ -1,8 +1,14 @@
-.header-hero-bg {
-  background: #9D50BB;
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700);.header-hero-bg {
+  background: #F486D1;
   /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #6E48AA, #9D50BB);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: linear-gradient(-38.33deg, #C452F5 0%, #F486D1 100%);
+}
+
+.hero {
+  height: 535px;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
 }
 
