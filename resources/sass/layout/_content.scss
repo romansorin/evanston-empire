@@ -1,47 +1,37 @@
-
-
 .main-content {
+  margin-bottom: 70px;
   color: $main-black;
+
   .section-heading {
     margin-bottom: 25px;
+
     .title {
       font-size: 20px;
     }
-    .border-bottom {
-      width: 8%;
-      border-bottom: 2px solid $border-purple !important;
-    }
   }
-  #explore-opportunities-card-wrapper {
-    margin-top: 80px;
-    margin-bottom: 100px;
-    .opportunity-card {
-      height: 375px;
-      width: 255px;
-      border-radius: 14px;
-      border-color: transparent;
-      -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.24);
-      -moz-box-shadow:    0px 2px 10px 0px rgba(0, 0, 0, 0.24);
-      box-shadow:         0px 2px 10px 0px rgba(0, 0, 0, 0.24);
-    }
-  }
+
   .section-content {
     .blockquote {
       width: 315px;
+
       .blockquote-text {
         font-size: 24px;
       }
     }
+
     .title {
-      font-size: 45px;
+      font-size: 34px;
+      width: 310px;
+      line-height: 1.25;
     }
+
     .subtitle {
-      font-size: 21px;
+      font-size: 19px;
+      width: 400px;
     }
+
     .link {
-      font-size: 20px;
+      font-size: 19 px;
     }
   }
 }
-
-

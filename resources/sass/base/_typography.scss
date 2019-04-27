@@ -1,17 +1,39 @@
-// Weights
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700');
+
+// Weight Variables
+$weight-light: 300;
+$weight-regular: 400;
+$weight-semi: 600;
+$weight-bold: 700;
+
+// Base variables
+$font-family-sans-serif: "Nunito Sans",
+sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+html, body {
+  font-family: $font-family-sans-serif;
+}
+// Weight classes
 .weight-light {
-	font-weight: $weight-light !important;
-	&--italic {
-		font-style: italic;
-		font-weight: 300;
-	}
+  font-weight: $weight-light !important;
+
+  &--italic {
+    font-style: italic;
+    font-weight: 300;
+  }
 }
+
 .weight-regular {
-	font-weight: $weight-regular !important;
+  font-weight: $weight-regular !important;
 }
+
 .weight-semibold {
-	font-weight: $weight-semi !important;
+  font-weight: $weight-semi !important;
 }
+
 .weight-bold {
-	font-weight: $weight-bold !important;
+  font-weight: $weight-bold !important;
 }
