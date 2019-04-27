@@ -1,3 +1,4 @@
+// This is a "call-to-action" button, used in heros, sections, etc.
 %cta-btn {
   height: 50px;
   width: 155px;
@@ -10,13 +11,14 @@
   border-radius: 48px;
 }
 
-
+// cta extension with a white background and black text
 .cta-btn-light {
   @extend %cta-btn;
   color: $main-black;
   background-color: $white;
 }
 
+// cta extension with a gradient background and white text
 .cta-btn-primary {
   @extend %cta-btn;
   color: $white;
