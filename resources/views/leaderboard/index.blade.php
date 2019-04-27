@@ -1,3 +1,3 @@
-@extends('layouts.app')
+@extends('app.auth')
 @section('content')
 @endsection
