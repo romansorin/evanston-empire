@@ -1,7 +1,9 @@
+// Bootstrap-provided "hero" element, overriding the background so we can use our own styling
 .jumbotron {
   background-color: transparent !important;
 }
 
+// Custom-defined hero class to prevent conflicts with .jumbotron
 .hero {
   margin-top: 35px;
   margin-bottom: 110px !important;
