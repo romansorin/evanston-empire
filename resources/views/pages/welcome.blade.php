@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('app.main')
 @section('stylesheets')
 <link rel="stylesheet" href="{{ asset('css/pages/home.css') }}">
 @endsection
@@ -10,7 +10,7 @@
 			<div class="col-6">
 				<h1 class="title title--light weight-semibold">Your <span class="weight-bold">next job</span><br/>is here.</h1>
 				<h2 class="subtitle subtitle--light">We are a team of passionate students with the goal of creating rich and real opportunities.</h2>
-				<button class="btn btn-light weight-semibold">Get in touch</button>
+				<button class="btn cta-btn-light weight-semibold">Get in touch</button>
 			</div>
 			<div class="col-6">
 				
@@ -24,13 +24,13 @@
 		<div class="row section-heading">
 			<div class="col-12 text-center">
 				<h3 class="title weight-semibold">Explore Our Opportunities</h3>
-				<div class="border-bottom ml-auto mr-auto"></div>
+				<div class="border-bottom-purple ml-auto mr-auto"></div>
 			</div>
 		</div>
 		<div class="row section-content" id="explore-opportunities-card-wrapper">
 			@for ($i = 0; $i < 4; $i++)
-			<div class="col-sm-3">
-				<div class="card opportunity-card">
+			<div class="col-3">
+				<div class="card">
 					<div class="card-body">
 						<h5 class="card-title">Special title treatment</h5>
 						<a href="#" class="weight-semibold">Go somewhere</a>
@@ -44,7 +44,7 @@
 		<div class="row section-heading">
 			<div class="col-12 text-center">
 				<h3 class="title weight-semibold">What We Do</h3>
-				<div class="border-bottom ml-auto mr-auto"></div>
+				<div class="border-bottom-purple ml-auto mr-auto"></div>
 			</div>
 		</div>
 		<div class="row section-content">
@@ -53,17 +53,17 @@
 							<p class="blockquote-text weight-light--italic">Profit is the ignition system of your economic engine.</p>
 						</blockquote>
 					</div>
-			<div class="col-6">
+			<div class="col-4" id="what-we-do-info">
 				<h3 class="title">Make your success as simple as you can clap</h3>
 				<p class="subtitle">Writing extra info here to simulate these types of text blocks to illustrate the idea of more content to sell someone on a product. And more, for a fourth line</p>
-				<a class="link">View more benefits</a>
+				<a href class="link weight-bold">View more benefits <span class="oi oi-arrow-right" title="arrow right" aria-hidden="true" id="view-more-arrow"></span></a>
 			</div>
-			<div class="col-6">
+			<div class="col-8">
 				</div>
 		</div>
 		<div class="row text-center">
 			<div class="col-12">
-				<button class="btn btn-primary">button</button>
+				<button class="btn cta-btn-primary">Learn more</button>
 			</div>
 		</div>
 	</section>
