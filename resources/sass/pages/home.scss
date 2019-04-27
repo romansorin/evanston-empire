@@ -1,36 +1,40 @@
 @import "../utilities/all";
 
+// Modify the background of the header and hero so they are a smooth, connected gradient (page-specific)
 .header-hero-bg {
-  background: $gradient-pink;
   /* fallback for old browsers */
+  background: $gradient-pink;
   background-image: linear-gradient(-38.33deg, $gradient-purple 0%, $gradient-pink 100%);
+
+  .navbar-nav {
+    .nav-link {
+      color: $white !important;
+    }
+  }
 }
 
 .hero {
   height: 535px;
 }
 
-.navbar-nav {
-  .nav-link {
-    color: $white !important;
-  }
-}
-
 #what-we-do-info {
   margin-top: 150px;
   margin-bottom: 170px;
+
   .title {
     margin-bottom: 25px;
   }
+
   .subtitle {
     margin-top: 15px;
     margin-bottom: 40px;
   }
-      #view-more-arrow {
-        font-weight: 100;
-        top: 3px;
-        margin-left: 5px;
-      }
+
+  #view-more-arrow {
+    font-weight: 100;
+    top: 3px; // Centers the arrow within the text element since it isn't uniform
+    margin-left: 5px;
+  }
 }
 
 .main-content {
