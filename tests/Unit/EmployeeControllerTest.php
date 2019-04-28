@@ -62,7 +62,6 @@ class EmployeeControllerTest extends TestCase
     public function testDeleteMethodDeletesUser() {
         $employee = factory(Employee::class)->create();
         
-        $employee = Employee::where('name', $employee->name)->first();
         $attributes = [
             'name' => $employee->name,
             'title' => $employee->title
@@ -73,5 +72,22 @@ class EmployeeControllerTest extends TestCase
         $this->assertDatabaseMissing('employees', $attributes);
     }
 
-    // TODO: create test for updating all user attributes
+    public function testUpdateMethodUpdatesAttributes() {
+        $employee = factory(Employee::class)->create();
+
+        $original_attributes = [
+            'name' => $employee->name,
+            'title' => $employee->title
+        ];
+
+        $new_attributes = [
+            'name' => $this->faker->name(),
+            'title' => $this->faker->word()
+        ];
+
+        $employee->update($new_attributes);
+
+        $this->assertDatabaseHas('employees', $new_attributes);
+        $this->assertDatabaseMissing('employees', $original_attributes);
+    }
 }

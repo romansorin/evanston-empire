@@ -72,6 +72,9 @@ class EmployeeController extends Controller
     public function update($id) // TODO
     {
         $employee = Employee::where('id', $id)->first();
+
+        $employee->update(request(['name', 'title']));
+        return redirect('/dashboard/employees');
     }
 
     /**
