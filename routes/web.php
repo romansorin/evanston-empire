@@ -31,6 +31,6 @@ Route::get('contact', function () { return redirect('apply'); });
 Auth::routes();
 Route::prefix('dashboard')->group(function () {
    Route::get('/', 'DashboardController@index');
-   Route::resource('leaderboard', 'LeaderboardController');
+   Route::resource('leaderboard', 'LeaderboardController')->except(['show']);
    Route::resource('employees', 'EmployeeController')->except(['show']);
 });
