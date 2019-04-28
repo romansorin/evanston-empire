@@ -1,4 +1,5 @@
 <?php
+use App\Http\Controllers\TeamController;
 
 ///////////////////
 // Public Routes //
@@ -31,4 +32,5 @@ Auth::routes();
 Route::prefix('dashboard')->group(function () {
    Route::get('/', 'DashboardController@index');
    Route::resource('leaderboard', 'LeaderboardController');
+   Route::resource('employees', 'EmployeeController')->except(['show']);
 });
