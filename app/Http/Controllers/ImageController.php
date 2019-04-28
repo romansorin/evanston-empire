@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * ImageController - Handle uploads of image files and deleting existing images from storage.
+ * 
+ * @author Roman Sorin <roman@romansorin.com>
+ */
+
 namespace App\Http\Controllers;
 
 use App\Image;

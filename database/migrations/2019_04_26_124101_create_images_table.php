@@ -17,6 +17,7 @@ class CreateImagesTable extends Migration
             $table->bigIncrements('id');
             $table->string('image_url');
             $table->text('image_description')->nullable();
+            $table->unsignedInteger('owner_id');
             $table->timestamps();
         });
     }
