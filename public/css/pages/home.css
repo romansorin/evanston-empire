@@ -11,7 +11,7 @@
 }
 
 .hero {
-  height: 535px;
+  min-height: 535px;
 }
 
 #what-we-do-info {

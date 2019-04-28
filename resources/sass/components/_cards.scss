@@ -14,5 +14,13 @@
     @extend %card;
     height: 375px;
     width: 255px;
+    margin-bottom: 45px;
   }
+  .card-img {
+    border-radius: 14px 14px 0px 0px;
+    height: 230px;
+    overflow: hidden;
+   
+  }
+  
 }
