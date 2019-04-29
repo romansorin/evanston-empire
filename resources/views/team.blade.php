@@ -24,6 +24,7 @@
     </section>
     <section class="main-content">
         <div class="row">
+        	<div class="container">
             <section class="center slider">
                 <div>
                     <img src="http://placehold.it/350x300?text=1">      
@@ -53,6 +54,7 @@
                     <img src="http://placehold.it/350x300?text=9">
                 </div>
             </section>
+            </div>
         </div>
     </section>
 </div>
