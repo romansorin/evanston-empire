@@ -30,8 +30,12 @@ Route::get('contact', function () { return redirect('apply'); });
 ////////////////////
 Auth::routes();
 Route::prefix('dashboard')->group(function () {
-   Route::get('/', 'DashboardController@index');
+   Route::get('/', 'Auth\DashboardController@index');
+   Route::namespace('User')->group(function () {
+      Route::resource('settings', 'ProfileController')->only(['edit', 'store', 'destroy']);
+      Route::get('settings', 'ProfileController@edit');
+      Route::resource('employees', 'EmployeeController')->except(['show']);
+      Route::resource('users', 'UserController')->except(['show']);
+   });
    Route::resource('leaderboard', 'LeaderboardController')->except(['show']);
-   Route::resource('employees', 'EmployeeController')->except(['show']);
-   Route::resource('users', 'UserController')->except(['show']);
 });
