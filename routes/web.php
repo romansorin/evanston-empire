@@ -33,4 +33,5 @@ Route::prefix('dashboard')->group(function () {
    Route::get('/', 'DashboardController@index');
    Route::resource('leaderboard', 'LeaderboardController')->except(['show']);
    Route::resource('employees', 'EmployeeController')->except(['show']);
+   Route::resource('users', 'UserController')->except(['show']);
 });
