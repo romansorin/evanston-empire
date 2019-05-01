@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\User;
 
 use App\Employee;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class EmployeeController extends Controller
@@ -16,7 +17,8 @@ class EmployeeController extends Controller
     // Return listing of all employees
     public function index()
     {
-        return view('employees.index');
+        $employees = Employee::simplePaginate(15);
+        return view('employees.index', compact('employees'));
     }
 
     // Add a new employee
@@ -28,12 +30,11 @@ class EmployeeController extends Controller
     public function store()
     {
         $attributes = request()->validate([
-            'name' => ['required', 'string'],
-            'title' => ['required', 'string'],
-            'university' => ['nullable', 'string'],
-            'city_name' => ['nullable', 'string'],
-            'state_name' => ['nullable', 'string'],
-            'description' => ['nullable', 'string']
+            'name' => ['required', 'string', 'max:255'],
+            'title' => ['required', 'string', 'max:255'],
+            'university' => ['nullable', 'string', 'max:255'],
+            'city_name' => ['nullable', 'string', 'max:255'],
+            'state_name' => ['nullable', 'string', 'max:255']
         ]);
 
         Employee::create($attributes);
@@ -49,18 +50,18 @@ class EmployeeController extends Controller
         return view('employees.edit', compact('employee'));
     }
 
-    public function update($id)
+    public function update($name)
     {
-        $employee = Employee::where('id', $id)->first();
+        $employee = Employee::where('name', $name)->first();
 
-        $employee->update(request(['name', 'title']));
+        $employee->update(request(['name', 'title', 'university', 'city_name', 'state_name']));
         return redirect('/dashboard/employees');
     }
 
     // Delete the employee
-    public function destroy($id)
+    public function destroy($name)
     {
-        Employee::where('id', $id)->first()->delete();
+        Employee::where('name', $name)->first()->delete();
         return redirect('/dashboard/employees');
     }
 }
