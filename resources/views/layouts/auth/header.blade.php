@@ -24,7 +24,7 @@
                     </div>
                 </a>
                 <div aria-labelledby="profileDropdown" class="dropdown-menu navbar-dropdown">
-                    <a class="dropdown-item" href="#">
+                    <a class="dropdown-item" href="/dashboard/settings">
                         <i class="mdi mdi-cached mr-2 text-success">
                         </i>
                         Settings

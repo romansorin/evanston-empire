@@ -1,5 +1,5 @@
 @extends('app.auth')
-
+@section('title', 'Login')
 @section('content')
 <div class="container-scroller">
     <div class="container-fluid page-body-wrapper full-page-wrapper">
@@ -11,7 +11,6 @@
                             {{--
                             <img src="../../images/logo.svg">
                                 --}}
-                            </img>
                         </div>
                         <h4 class="weight-bold">
                             Hello! Let's get started
@@ -47,16 +46,17 @@
                                 </button>
                             </div>
                         </form>
+                        <div class="text-center mt-4 weight-light">
+                                Don't have an account?
+                                <a class="text-primary" href="/register">
+                                    Sign up
+                                </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="text-center mt-4 weight-light">
-    Don't have an account?
-    <a class="text-primary" href="/register">
-        Sign up
-    </a>
-</div>
+
 @endsection

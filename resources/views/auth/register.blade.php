@@ -1,5 +1,5 @@
 @extends('app.auth')
-
+@section('title', 'Register')
 @section('content')
 <div class="container-scroller">
     <div class="container-fluid page-body-wrapper full-page-wrapper">
