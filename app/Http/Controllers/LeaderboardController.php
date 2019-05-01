@@ -13,12 +13,14 @@ class LeaderboardController extends Controller
         $this->middleware('auth', ['except' => 'index']);
     }
 
+    // Return listing of all leaderboard entries
     public function index()
     {
         $leaderboard = Leaderboard::simplePaginate(15);
         return view('leaderboard.index', compact('leaderboard'));
     }
 
+    // Add new cell to leaderboard
     public function create()
     {
         return view('leaderboard.create');
@@ -32,6 +34,7 @@ class LeaderboardController extends Controller
         return view('leaderboard.index');
     }
 
+    // Edit existing leaderboard cell
     public function edit(Leaderboard $leaderboard)
     {
         return view('leaderboard.edit');
@@ -39,9 +42,10 @@ class LeaderboardController extends Controller
 
     public function update(Request $request, Leaderboard $leaderboard)
     {
-        return view('leaderboard.show');
+        return view('leaderboard.index');
     }
 
+    // Delete leaderboard cell
     public function destroy(Leaderboard $leaderboard)
     {
         return view('leaderboard.index');
