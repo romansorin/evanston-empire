@@ -3,26 +3,26 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Leaderboard;
 
-class DashboardController extends Controller
-{
+class DashboardController extends Controller {
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct()
-    {
+    public function __construct() {
         $this->middleware('auth');
     }
 
     /**
-     * Show the application dashboard.
+     * Fetch all leaderboard cells from the table, then pass it into the view
+     * with pagination for every 15 records
      *
-     * @return \Illuminate\Contracts\Support\Renderable
+     * @return view
      */
-    public function index()
-    {
-        return view('auth.dashboard.index');
+    public function index() {
+        $cells = Leaderboard::orderBy('cpo', 'desc')->simplePaginate(15);
+        return view('auth.dashboard.index', compact('cells'));
     }
 }
