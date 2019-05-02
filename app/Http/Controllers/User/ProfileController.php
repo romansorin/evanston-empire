@@ -3,27 +3,53 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
+use App\User;
+use Illuminate\Support\Facades\Auth;
 
-class ProfileController extends Controller
-{
-    public function __construct()
-    {
+class ProfileController extends Controller {
+
+    /**
+     * Create an instance of employee controller, check that the current user
+     * is authenticated
+     *
+     * @return void
+     */
+    public function __construct() {
         $this->middleware('auth');
     }
 
-    public function edit()
-    {
+    /**
+     * Show the view for editing the currently authenticated user's details
+     *
+     * @return view
+     */
+    public function edit() {
         $user = auth()->user();
         return view('auth.dashboard.settings', compact('user'));
     }
-    public function update()
-    {
-        auth()->user()->update(request(['name', 'username', 'password', 'email']));
+
+    /**
+     * Update the currently authenticated user's details
+     *
+     * @return view
+     */
+    public function update() {
+        auth()->user()->update(request(['name', 'username', 'email']));
         return view('auth.dashboard.settings');
     }
 
+    /**
+     * Delete the currently authenticated user's record from the database
+     *
+     * @return redirect
+     */
     public function destroy() {
-        auth()->user()->destroy();
-        return view('pages.welcome');
+        $id = auth()->user()->id;
+
+        Auth::logout(); // Need to log the user out before deleting their record, or else the record will not delete
+
+        User::where('id', $id)->first()->delete();
+
+        return redirect('/');
     }
 }
