@@ -57,14 +57,13 @@
                                           </a>
                                           <div class="dropdown-menu">
                                             <a class="dropdown-item" href="/dashboard/leaderboard/{{ $cell->id }}/edit">Edit</a>
-                                            <form id="delete-form" method="POST" action="/dashboard/leaderboard/{{ $cell->id }}">
+                                            <form method="POST" action="/dashboard/leaderboard/{{ $cell->id }}">
                                                 @csrf
                                                 @method('DELETE')
                                             <a class="dropdown-item" onclick="event.preventDefault(); $(this).closest('form').submit();" href="/dashboard/leaderboard/{{ $cell->id }}">Delete</a>
                                             </form>
                                           </div>
                                         </div>                            
-                                       {{-- ... to edit and delete --}}
                                     </td>
                                 </tr>
                                 @endforeach

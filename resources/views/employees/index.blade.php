@@ -45,7 +45,7 @@
                                     <th>
                                         Location
                                     </th>
-                                    {{-- <th></th> dots to edit and delete --}}
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -65,7 +65,19 @@
                                     </td>
                                     <td>
                                 
-                                       {{-- ... to edit and delete --}}
+                                      <div class="btn-group">
+                                          <a role="button" class="btn btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="mdi mdi-dots-vertical"></i>
+                                          </a>
+                                          <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="/dashboard/employees/{{ $employee->id }}/edit">Edit</a>
+                                            <form method="POST" action="/dashboard/employees/{{ $employee->id }}">
+                                                @csrf
+                                                @method('DELETE')
+                                            <a class="dropdown-item" onclick="event.preventDefault(); $(this).closest('form').submit();" href="/dashboard/employees/{{ $employee->id }}">Delete</a>
+                                            </form>
+                                          </div>
+                                        </div>             
                                     	
                                     </td>
                                 </tr>
