@@ -60,11 +60,11 @@ class EmployeeController extends Controller {
     /**
      * Show the view for editing an existing employee's details
      *
-     * @param  String $name
+     * @param  String $id
      * @return view
      */
-    public function edit($name) {
-        $employee = Employee::where('name', $name)->first();
+    public function edit($id) {
+        $employee = Employee::where('id', $id)->first();
 
         return view('employees.edit', compact('employee'));
     }
@@ -72,11 +72,11 @@ class EmployeeController extends Controller {
     /**
      * Update an existing employee's details
      *
-     * @param  String $name
+     * @param  String $id
      * @return redirect
      */
-    public function update($name) {
-        $employee = Employee::where('name', $name)->first();
+    public function update($id) {
+        $employee = Employee::where('id', $id)->first();
 
         $employee->update(request(['name', 'title', 'university', 'city_name', 'state_name']));
         return redirect('/dashboard/employees');
@@ -85,11 +85,11 @@ class EmployeeController extends Controller {
     /**
      * Delete an employee's record from the database
      *
-     * @param  String $name
+     * @param  String $id
      * @return redirect
      */
-    public function destroy($name) {
-        Employee::where('name', $name)->first()->delete();
+    public function destroy($id) {
+        Employee::where('id', $id)->first()->delete();
         return redirect('/dashboard/employees');
     }
 }
