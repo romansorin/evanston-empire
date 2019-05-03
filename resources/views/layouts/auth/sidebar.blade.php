@@ -43,5 +43,14 @@
                 </i>
             </a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/dashboard/images">
+                <span class="menu-title">
+                    Images
+                </span>
+                <i class="mdi mdi-image menu-icon">
+                </i>
+            </a>
+        </li>
     </ul>
 </nav>

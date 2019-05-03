@@ -39,4 +39,5 @@ Route::prefix('dashboard')->group(function () {
         Route::resource('users', 'UserController')->except(['show', 'store', 'create']);
     });
     Route::resource('leaderboard', 'LeaderboardController')->except(['show']);
+    Route::resource('images', 'ImageController');
 });
