@@ -5,7 +5,7 @@
     <div class="page-header">
         <h3 class="page-title">
             <span class="page-title-icon bg-gradient-primary text-white mr-2">
-                <i class="mdi mdi-home">
+                <i class="mdi mdi-account-multiple">
                 </i>
             </span>
             Users
@@ -70,6 +70,7 @@
                                           <a role="button" class="btn btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i class="mdi mdi-dots-vertical"></i>
                                           </a>
+                                        
                                           <div class="dropdown-menu">
                                             <a class="dropdown-item" href="/dashboard/users/{{ $user->username }}/edit">Edit</a>
                                             <form method="POST" action="/dashboard/users/{{ $user->username }}">

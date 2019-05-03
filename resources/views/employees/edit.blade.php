@@ -4,12 +4,16 @@
 <div class="content-wrapper">
               <div class="page-header">
             <h3 class="page-title">
-              Users
+              <span class="page-title-icon bg-gradient-primary text-white mr-2">
+                <i class="mdi mdi-worker">
+                </i>
+            </span>
+              Employees
             </h3>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item weight-semibold"><a href="/dashboard">Dashboard</a></li>
-                <li class="breadcrumb-item weight-semibold"><a href="/dashboard/employees">Users</a></li>
+                <li class="breadcrumb-item weight-semibold"><a href="/dashboard/employees">Employees</a></li>
                 <li class="breadcrumb-item active" aria-current="edit">Edit</li>
               </ol>
             </nav>
@@ -18,28 +22,38 @@
 		<div class="col-12 auth grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title weight-bold">Edit User</h4>
+                  <h4 class="card-title weight-bold">Edit Employee</h4>
                   <p class="card-description">
-                    Edit a user's name, username, or email.
+                    Edit an employee's details.
                   </p>
-                  <form method="POST" action="/dashboard/users/{{$user->id}}">
+                  <form method="POST" action="/dashboard/employees/{{$employee->id}}">
                   	@csrf
                   	@method('PATCH')
-                    <div class="form-group">
-                    	<label for="name">Name</label>
-                    	<input type="text" class="form-control {{ $errors->has('name') ? 'is-invalid' : ''}} form-control-lg pl-3" name="name" id="name" placeholder="Name" value="{{ $user->name }}">
-                    	<small class="text-danger">{{ $errors->first('name') }}</small>           
+                     <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control {{ $errors->has('name') ? 'is-invalid' : ''}} form-control-lg pl-3" name="name" id="name" placeholder="Name" value="{{ $employee->name }}">
+                      <small class="text-danger">{{ $errors->first('name') }}</small>           
                     </div>
                     <div class="form-group">
-                      <label for="username">Username</label>
-                      <input type="text" class="form-control {{ $errors->has('username') ? 'is-invalid' : ''}} form-control-lg pl-3" name="username" id="username" placeholder="Username" value="{{ $user->username }}">
-                      <small class="text-danger">{{ $errors->first('username') }}</small>           
+                      <label for="title">Title</label>
+                      <input type="text" class="form-control {{ $errors->has('title') ? 'is-invalid' : ''}} form-control-lg pl-3" name="title" id="title" placeholder="Title" value="{{ $employee->title }}">
+                      <small class="text-danger">{{ $errors->first('title') }}</small>           
                     </div>
                     <div class="form-group">
-                      <label for="email">Email</label>
-                      <input type="text" class="form-control {{ $errors->has('email') ? 'is-invalid' : ''}} form-control-lg pl-3" name="email" id="email" placeholder="Email" value="{{ $user->email }}">
-                      <small class="text-danger">{{ $errors->first('email') }}</small>
-                    </div>                   
+                      <label for="university">University</label>
+                      <input type="text" class="form-control {{ $errors->has('university') ? 'is-invalid' : ''}} form-control-lg pl-3" name="university" id="university" placeholder="University" value="{{ $employee->university }}">
+                      <small class="text-danger">{{ $errors->first('university') }}</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="city_name">City</label>
+                      <input type="text" class="form-control {{ $errors->has('city_name') ? 'is-invalid' : ''}} form-control-lg pl-3" name="city_name" id="city_name" placeholder="City" value="{{ $employee->city_name }}">
+                      <small class="text-danger">{{ $errors->first('city_name') }}</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="state_name">State</label>
+                      <input type="text" class="form-control {{ $errors->has('state_name') ? 'is-invalid' : ''}} form-control-lg pl-3" name="state_name" id="state_name" placeholder="State" value="{{ $employee->state_name }}">
+                      <small class="text-danger">{{ $errors->first('state_name') }}</small>
+                    </div>          
                     <button type="submit" class="btn btn-gradient-success mr-2">Save changes</button>
                     </form>                    
                   </div>
