@@ -3,11 +3,12 @@
 ///////////////////
 // Public Routes //
 ///////////////////
-Route::get('/', function () {return view('pages.welcome');});
-Route::get('apply', function () {return view('pages.apply');});
-Route::get('gallery', function () {return view('pages.gallery');});
-Route::get('meet-the-team', function () {return view('pages.team');});
-Route::get('faq', function () {return view('pages.faq');});
+Route::get('/', function () { return view('pages.welcome'); });
+Route::get('apply', function () { return view('pages.apply'); });
+Route::get('gallery', function () { return view('pages.gallery'); });
+Route::get('meet-the-team', function () { return view('pages.team'); });
+Route::get('faq', function () { return view('pages.faq'); });
+Route::post('contact', 'ContactController@store');
 
 /**
  * Even though the route and view seem mismatched, the requested public facing URI is what-we-do. It

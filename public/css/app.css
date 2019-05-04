@@ -28347,6 +28347,7 @@ body {
   background-image: linear-gradient(-38.33deg, #c452f5 0%, #f486d1 100%);
 }
 
+.form-card,
 #explore-opportunities-card-wrapper .card {
   border-radius: 14px;
   border-color: transparent;
@@ -28368,6 +28369,20 @@ body {
   border-radius: 14px 14px 0px 0px;
   height: 230px;
   overflow: hidden;
+}
+
+.form-card {
+  width: 435px;
+  height: 770px;
+}
+
+.form-card .card-body {
+  padding: 2.25rem;
+  padding-right: 2.5rem;
+}
+
+.form-card .form-group {
+  margin-bottom: 30px;
 }
 
 .main-content {

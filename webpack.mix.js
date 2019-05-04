@@ -16,3 +16,5 @@ mix.js('resources/js/app.js', 'public/js')
    .sass('resources/sass/pages/home.scss', 'public/css/pages')
    .copyDirectory('resources/sass/pages/dashboard', 'public/css/dashboard')
    .copyDirectory('resources/js/dashboard', 'public/js/dashboard');
+   .sass('resources/sass/pages/about.scss', 'public/css/pages')
+   .sass('resources/sass/pages/apply.scss', 'public/css/pages');
