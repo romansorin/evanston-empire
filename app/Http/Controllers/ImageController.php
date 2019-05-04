@@ -45,10 +45,17 @@ class ImageController extends Controller
         return redirect('/dashboard/images');
     }
 
+    public function edit($filename) {
+        $image = Storage::get("public/images/$filename"); // need to think this through
+
+        return view('images.edit', compact('image'));
+    }
+
     public function destroy($filename)
     {
-        Image::where('file_name', $filename)->first()->destroy();
-        Storage::delete("public/images/{$filename}");
+     
+        Storage::delete("public/images/$filename");
+        Image::where('file_name', $filename)->first()->delete();
 
         return redirect('/dashboard/images');
     }
