@@ -28,3 +28,17 @@
     align-self: flex-end;
   }
 }
+
+.blockquote {
+    max-width: 680px;
+    .blockquote-text {
+        font-size: 2.75rem;
+    }
+}
+
+#employees-heading {
+    margin-top: 200px;
+    .title {
+        font-size: 32px;
+    }
+}

@@ -28548,3 +28548,19 @@ body {
   color: #fff;
 }
 
+.slick-slider {
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.slick-slider .slick-slide {
+  padding: 1.5rem;
+  width: 435px;
+  height: 550px;
+}
+
+.slick-slider .slick-slide .employee-photo {
+  width: 435px;
+  height: 550px;
+}
+

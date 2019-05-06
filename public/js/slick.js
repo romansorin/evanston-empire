@@ -87,9 +87,9 @@
 /******/ ({
 
 /***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/slick-carousel/slick/slick-theme.scss":
-/*!*************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./node_modules/slick-carousel/slick/slick-theme.scss ***!
-  \*************************************************************************************************************************************************************************************/
+/*!***************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--11-2!./node_modules/sass-loader/lib/loader.js??ref--11-3!./node_modules/slick-carousel/slick/slick-theme.scss ***!
+  \***************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -107,9 +107,9 @@ exports.push([module.i, "@charset \"UTF-8\";\n/* Slider */\n.slick-loading .slic
 /***/ }),
 
 /***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/slick-carousel/slick/slick.scss":
-/*!*******************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./node_modules/slick-carousel/slick/slick.scss ***!
-  \*******************************************************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--11-2!./node_modules/sass-loader/lib/loader.js??ref--11-3!./node_modules/slick-carousel/slick/slick.scss ***!
+  \*********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10902,7 +10902,7 @@ module.exports = "/fonts/vendor/slick-carousel/slick/slick.woff?b7c9e1e479de3b53
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../css-loader!../../postcss-loader/src??ref--7-2!../../sass-loader/lib/loader.js??ref--7-3!./slick-theme.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/slick-carousel/slick/slick-theme.scss");
+var content = __webpack_require__(/*! !../../css-loader!../../postcss-loader/src??ref--11-2!../../sass-loader/lib/loader.js??ref--11-3!./slick-theme.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/slick-carousel/slick/slick-theme.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -13953,7 +13953,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../css-loader!../../postcss-loader/src??ref--7-2!../../sass-loader/lib/loader.js??ref--7-3!./slick.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/slick-carousel/slick/slick.scss");
+var content = __webpack_require__(/*! !../../css-loader!../../postcss-loader/src??ref--11-2!../../sass-loader/lib/loader.js??ref--11-3!./slick.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/slick-carousel/slick/slick.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -14497,7 +14497,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var slick_carousel_slick_slick_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(slick_carousel_slick_slick_scss__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var slick_carousel_slick_slick_theme_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! slick-carousel/slick/slick-theme.scss */ "./node_modules/slick-carousel/slick/slick-theme.scss");
 /* harmony import */ var slick_carousel_slick_slick_theme_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(slick_carousel_slick_slick_theme_scss__WEBPACK_IMPORTED_MODULE_1__);
-window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+window.$ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/slick.js");
 
@@ -14505,13 +14505,15 @@ __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/s
 
 
 $(".center").slick({
-  dots: true,
-  infinite: true,
-  speed: 300,
-  centerMode: true,
-  centerPadding: '60px',
   slidesToShow: 3,
   slidesToScroll: 1,
+  dots: true,
+  speed: 500,
+  infinite: true,
+  mobileFirst: true,
+  centerMode: true,
+  variableWidth: true,
+  variableHeight: true,
   focusOnSelect: true,
   responsive: [{
     breakpoint: 1024,
@@ -14545,7 +14547,7 @@ $(".center").slick({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/988244/Documents/sorin/evanston-empire/resources/js/slick.js */"./resources/js/slick.js");
+module.exports = __webpack_require__(/*! E:\Documents\GitHub\evanstonempire\resources\js\slick.js */"./resources/js/slick.js");
 
 
 /***/ })

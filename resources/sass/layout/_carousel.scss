@@ -1,0 +1,17 @@
+.slick-slider {
+    overflow: hidden;
+    margin-top: 50px;
+    .slick-slide {
+        padding: 1.5rem;
+        width: 435px;
+        height: 550px;
+        .employee-photo {
+            width: 435px;
+            height: 550px;
+        }
+    }
+    .slick-current {
+        // height: 605px;
+        // width: 510px;
+    }
+}

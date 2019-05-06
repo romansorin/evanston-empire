@@ -16,7 +16,7 @@
                 @include('layouts.main.footer')
             {{-- header-hero-bg div is closed inside the content --}}
         </div>
-        @yield('scripts')
         <script src="{{ asset('js/app.js') }}"></script>
+        @yield('scripts')
     </body>
 </html>
