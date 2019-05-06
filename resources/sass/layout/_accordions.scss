@@ -1,0 +1,36 @@
+.accordion {
+  width: 80%;
+
+  .card {
+    border: none !important;
+  }
+
+  .accordion-card {
+    width: 100%;
+    border-bottom: 1px solid #e7e7e7 !important;
+  }
+
+  .card-header {
+    background-color: transparent;
+    color: $main-black;
+    border-bottom: none;
+
+    .btn {
+      font-size: 20px;
+      color: $main-black;
+
+      @include media-breakpoint-down(xs) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .card-body {
+    color: #585858;
+    font-size: 17px;
+  }
+
+  .collapse {
+    border-bottom: 1px solid #e7e7e7;
+  }
+}

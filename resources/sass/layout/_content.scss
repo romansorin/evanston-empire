@@ -3,7 +3,7 @@
   margin-bottom: 70px;
   color: $main-black;
 
-  // Used as needed, can be called several times in a page and thus may require page-specific styling 
+  // Used as needed, can be called several times in a page and thus may require page-specific styling
   .section-heading {
     margin-bottom: 25px;
 
@@ -11,6 +11,7 @@
       font-size: 20px;
     }
   }
+
   .section-content {
     .blockquote {
       max-width: 315px;
@@ -42,8 +43,16 @@
     padding-top: 5px;
     padding-bottom: 10px;
   }
+
   .oi {
     top: 3px;
     padding-right: 15px;
+  }
+}
+
+#faq-wrapper {
+  .subtitle {
+    max-width: 570px;
+    font-size: 20px;
   }
 }
