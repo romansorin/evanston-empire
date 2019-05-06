@@ -8,20 +8,22 @@ use App\Mail\ContactSubmitted;
 
 class ContactController extends Controller
 {
+    private $toMail = 'rmaximsorin@gmail.com';
 
     public function store()
     {
         $attributes = request()->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'email', 'max:255'],
-            'message' => ['required', 'string']
+            'user_message' => ['required', 'string']
         ]);
 
         Contact::create($attributes);
+        
+        // change as needed
+        Mail::to($this->toMail)->send(new ContactSubmitted(request()->all()));
 
-        Mail::to('roman@romansorin.com', new ContactSubmitted($attributes));
-
-        return back()->with('success', 'Thanks for contacting us!');
+        return back();
     }
 
 }

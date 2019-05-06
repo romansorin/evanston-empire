@@ -1,13 +1,17 @@
-You received a message from : {{ $data->name }}
+
+<div>
+You received a message from : {{ $name }}
 
 <p>
-Name: {{ $data->name }}
+Name: {{ $name }}
 </p>
 
 <p>
-Email: {{ $data->email }}
+Email: {{ $email }}
 </p>
 
 <p>
-Message: {{ $data->message }}
+Message: {{ $user_message }}
 </p>
+
+</div>
