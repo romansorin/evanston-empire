@@ -1,0 +1,30 @@
+@import "../utilities/all";
+
+.header-hero-bg {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.32), 
+    rgba(0, 0, 0, 0.32)
+  ), url('https://images.pexels.com/photos/1661004/pexels-photo-1661004.jpeg?cs=srgb&dl=adults-analysis-brainstorming-1661004.jpg&fm=jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .navbar-nav {
+    .nav-link {
+      color: $white !important;
+    }
+  }
+}
+
+.hero {
+  height: 415px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    .title {
+        text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    }
+  .row {
+    align-self: flex-end;
+  }
+}
