@@ -1,7 +1,45 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700');
 
-// Base variables
-$font-family-sans-serif: "Nunito Sans", sans-serif;
+/* Variables */
+// Base
+$font-family-sans-serif: "Nunito Sans",
+sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
+
+// Weight
+$weight-light: 300;
+$weight-regular: 400;
+$weight-semi: 600;
+$weight-bold: 700;
+
+
+/* Classes */
+
+html,
+body {
+  font-family: $font-family-sans-serif; // Set the font family to override normalize.css font stack
+}
+
+// Weight
+.weight-light {
+  font-weight: $weight-light !important;
+
+  &--italic {
+    font-style: italic;
+    font-weight: 300;
+  }
+}
+
+.weight-regular {
+  font-weight: $weight-regular !important;
+}
+
+.weight-semibold {
+  font-weight: $weight-semi !important;
+}
+
+.weight-bold {
+  font-weight: $weight-bold !important;
+}

@@ -1,0 +1,59 @@
+// This is a "call-to-action" button, used in heros, sections, etc.
+%cta-btn {
+  height: 50px;
+  width: 155px;
+  font-size: 16px;
+  padding: 9px 15px 7px 15px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.24);
+  border-radius: 48px;
+  transition: .2s ease-in;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+// cta extension with a white background and black text
+.cta-btn-light {
+  @extend %cta-btn;
+  color: $main-black;
+  background-color: $white;
+}
+
+// cta extension with a gradient background and white text
+.cta-btn-primary {
+  @extend %cta-btn;
+  color: $white;
+  background-image: linear-gradient(-38.33deg, #c452f5 0%, #f486d1 100%);
+  transition: .2s ease-in;
+
+  &:hover {
+    transform: translateY(-2px);
+    color: $white;
+  }
+}
+
+.btn-gradient-primary {
+  background-image: linear-gradient(169.3deg, #c452f5 0%, #f486d1 100%);
+  border-radius: 8px;
+  height: 50px;
+  color: $white;
+  border-color: transparent;
+
+  &:hover {
+    color: $white;
+  }
+
+  .oi {
+    top: 2px;
+    padding-left: 5px;
+  }
+
+  width: 155px;
+  -webkit-box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.16);
+}

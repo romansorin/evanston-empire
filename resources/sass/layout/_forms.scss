@@ -1,0 +1,17 @@
+.form-default {
+    .form-group {
+        margin-bottom: 30px;
+      }
+    .form-control {
+        border: 1px solid #ebedf2;
+        &::placeholder {
+            color: #cecece;
+        }
+    }
+    .is-invalid {
+        border-color: #dc3545 !important;
+    }
+    .text-danger {
+        padding-top: 4px;
+    }
+}

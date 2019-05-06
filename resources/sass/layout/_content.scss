@@ -1,0 +1,49 @@
+// Serves as a single wrapper for all body content
+.main-content {
+  margin-bottom: 70px;
+  color: $main-black;
+
+  // Used as needed, can be called several times in a page and thus may require page-specific styling 
+  .section-heading {
+    margin-bottom: 25px;
+
+    .title {
+      font-size: 20px;
+    }
+  }
+  .section-content {
+    .blockquote {
+      max-width: 315px;
+
+      .blockquote-text {
+        font-size: 24px;
+      }
+    }
+
+    .title {
+      font-size: 34px;
+      max-width: 310px;
+      line-height: 1.25;
+    }
+
+    .subtitle {
+      font-size: 19px;
+      max-width: 400px;
+    }
+
+    .link {
+      font-size: 19px;
+    }
+  }
+}
+
+.contact {
+  .contact-title {
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+  .oi {
+    top: 3px;
+    padding-right: 15px;
+  }
+}

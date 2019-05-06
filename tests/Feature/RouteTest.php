@@ -20,7 +20,8 @@ class RouteTest extends TestCase
             '/apply',
             '/gallery',
             '/meet-the-team',
-            '/what-we-do'
+            '/what-we-do',
+            '/faq'
         ];
 
         foreach ($urls as $url) {

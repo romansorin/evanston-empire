@@ -1,0 +1,40 @@
+#info-wrapper {
+    margin-top: 60px;
+    width: 435px;
+    .title {
+        margin-bottom: 10px;
+    }
+    .subtitle {
+        font-size: 19px;
+        max-width: 400px;
+        line-height: 1.25;
+        font-weight: lighter;
+    }
+}
+
+#topic-wrapper {
+    margin-top: 45px;
+    width: 435px;
+    .topic {
+        margin-bottom: 35px;
+        .title {
+            font-size: 22px;
+            margin-bottom: 6px;
+        }
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    .hero {
+        margin-bottom: 30px !important;
+    }
+    #info-wrapper, #topic-wrapper {
+        width: 345px;
+    }
+}
+
+#apply-bg {
+    background: url("path.svg");
+    height: 100%;
+}
