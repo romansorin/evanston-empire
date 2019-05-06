@@ -8,7 +8,7 @@
 <div class="container">
 	<div class="jumbotron hero pl-0">
 		<div class="row">
-			<div class="col-6">
+			<div class="col-md-6 col-sm-10">
 				<h1 class="title title--light weight-semibold">Your <span class="weight-bold">next job</span><br/>is here.</h1>
 				<h2 class="subtitle subtitle--light">We are a team of passionate students with the goal of creating rich and real opportunities.</h2>
 				<button class="btn cta-btn-light weight-semibold">Get in touch</button>
@@ -35,8 +35,8 @@
 						<img class="img-fluid" src="https://images.pexels.com/photos/2097116/pexels-photo-2097116.jpeg?cs=srgb&dl=architectural-design-architecture-building-2097116.jpg&fm=jpg"
 						 alt="filler image">
 					</div>
-					<div class="card-body">
-						<div class="card-info">
+					<div class="card-body text-center">
+						<div class="card-info mx-auto">
 							<h5 class="card-title">Special title treatment</h5>
 							<a href="#" class="weight-semibold">Go somewhere</a>
 						</div>
@@ -49,8 +49,8 @@
 						<img class="img-fluid" src="https://images.pexels.com/photos/2097116/pexels-photo-2097116.jpeg?cs=srgb&dl=architectural-design-architecture-building-2097116.jpg&fm=jpg"
 						 alt="filler image">
 					</div>
-					<div class="card-body">
-						<div class="card-info">
+					<div class="card-body text-center">
+						<div class="card-info mx-auto">
 							<h5 class="card-title">Special title treatment</h5>
 							<a href="#" class="weight-semibold">Go somewhere</a>
 						</div>
@@ -63,8 +63,8 @@
 						<img class="img-fluid" src="https://images.pexels.com/photos/2097116/pexels-photo-2097116.jpeg?cs=srgb&dl=architectural-design-architecture-building-2097116.jpg&fm=jpg"
 						 alt="filler image">
 					</div>
-					<div class="card-body">
-						<div class="card-info">
+					<div class="card-body text-center">
+						<div class="card-info mx-auto">
 							<h5 class="card-title">Special title treatment</h5>
 							<a href="#" class="weight-semibold">Go somewhere</a>
 						</div>
@@ -77,8 +77,8 @@
 						<img class="img-fluid" src="https://images.pexels.com/photos/2097116/pexels-photo-2097116.jpeg?cs=srgb&dl=architectural-design-architecture-building-2097116.jpg&fm=jpg"
 						 alt="filler image">
 					</div>
-					<div class="card-body">
-						<div class="card-info">
+					<div class="card-body text-center">
+						<div class="card-info mx-auto">
 							<h5 class="card-title">Special title treatment</h5>
 							<a href="#" class="weight-semibold">Go somewhere</a>
 						</div>
