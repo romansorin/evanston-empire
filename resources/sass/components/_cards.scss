@@ -15,12 +15,15 @@
     height: 375px;
     width: 255px;
     margin-bottom: 45px;
+    overflow: hidden;
+  }
+  .card-body {
+    padding-top: 35px;
   }
   .card-img {
     border-radius: 14px 14px 0px 0px;
-    height: 230px;
+    height: 235px;
     overflow: hidden;
-   
   }
   
 }
@@ -28,12 +31,14 @@
 .form-card {
   @extend %card;
   width: 435px;
-  height: 770px;
+  height: 100%;
   .card-body {
     padding: 2.25rem;
     padding-right: 2.5rem;
   }
-  .form-group {
-    margin-bottom: 30px;
+  @include media-breakpoint-down(sm) {
+  
+      width: 345px;
+
   }
 }
