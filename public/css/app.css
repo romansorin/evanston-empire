@@ -581,8 +581,8 @@ pre code {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 8px;
+  padding-left: 8px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -607,14 +607,14 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1200px;
   }
 }
 
 .container-fluid {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 8px;
+  padding-left: 8px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -622,8 +622,8 @@ pre code {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -8px;
+  margin-left: -8px;
 }
 
 .no-gutters {
@@ -709,8 +709,8 @@ pre code {
 .col-1 {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 8px;
+  padding-left: 8px;
 }
 
 .col {
@@ -4858,23 +4858,23 @@ input[type=button].btn-block {
 }
 
 .card-deck .card {
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 @media (min-width: 576px) {
   .card-deck {
     flex-flow: row wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: -8px;
+    margin-left: -8px;
   }
 
   .card-deck .card {
     display: flex;
     flex: 1 0 0%;
     flex-direction: column;
-    margin-right: 15px;
+    margin-right: 8px;
     margin-bottom: 0;
-    margin-left: 15px;
+    margin-left: 8px;
   }
 }
 
@@ -4884,7 +4884,7 @@ input[type=button].btn-block {
 }
 
 .card-group > .card {
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 @media (min-width: 576px) {
@@ -28335,6 +28335,13 @@ body {
   text-transform: uppercase;
   box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.24);
   border-radius: 48px;
+  transition: 0.2s ease-in;
+}
+
+.cta-btn-primary:hover,
+.cta-btn-light:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .cta-btn-light {
@@ -28345,6 +28352,32 @@ body {
 .cta-btn-primary {
   color: #fff;
   background-image: linear-gradient(-38.33deg, #c452f5 0%, #f486d1 100%);
+  transition: 0.2s ease-in;
+}
+
+.cta-btn-primary:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  color: #fff;
+}
+
+.btn-gradient-primary {
+  background-image: linear-gradient(169.3deg, #c452f5 0%, #f486d1 100%);
+  border-radius: 8px;
+  height: 50px;
+  color: #fff;
+  border-color: transparent;
+  width: 155px;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.16);
+}
+
+.btn-gradient-primary:hover {
+  color: #fff;
+}
+
+.btn-gradient-primary .oi {
+  top: 2px;
+  padding-left: 5px;
 }
 
 .form-card,
@@ -28363,17 +28396,22 @@ body {
   height: 375px;
   width: 255px;
   margin-bottom: 45px;
+  overflow: hidden;
+}
+
+#explore-opportunities-card-wrapper .card-body {
+  padding-top: 35px;
 }
 
 #explore-opportunities-card-wrapper .card-img {
   border-radius: 14px 14px 0px 0px;
-  height: 230px;
+  height: 235px;
   overflow: hidden;
 }
 
 .form-card {
   width: 435px;
-  height: 770px;
+  height: 100%;
 }
 
 .form-card .card-body {
@@ -28381,8 +28419,10 @@ body {
   padding-right: 2.5rem;
 }
 
-.form-card .form-group {
-  margin-bottom: 30px;
+@media (max-width: 767.98px) {
+  .form-card {
+    width: 345px;
+  }
 }
 
 .main-content {
@@ -28421,6 +28461,16 @@ body {
   font-size: 19px;
 }
 
+.contact .contact-title {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.contact .oi {
+  top: 3px;
+  padding-right: 15px;
+}
+
 .header-wrapper .navbar-nav {
   margin-top: 25px;
 }
@@ -28433,6 +28483,38 @@ body {
 
 .header-wrapper .navbar-nav .nav-link {
   color: #333;
+}
+
+.form-default .form-group {
+  margin-bottom: 30px;
+}
+
+.form-default .form-control {
+  border: 1px solid #ebedf2;
+}
+
+.form-default .form-control::-webkit-input-placeholder {
+  color: #cecece;
+}
+
+.form-default .form-control:-ms-input-placeholder {
+  color: #cecece;
+}
+
+.form-default .form-control::-ms-input-placeholder {
+  color: #cecece;
+}
+
+.form-default .form-control::placeholder {
+  color: #cecece;
+}
+
+.form-default .is-invalid {
+  border-color: #dc3545 !important;
+}
+
+.form-default .text-danger {
+  padding-top: 4px;
 }
 
 .jumbotron {

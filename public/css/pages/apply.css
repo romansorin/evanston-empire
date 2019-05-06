@@ -1,0 +1,46 @@
+#info-wrapper {
+  margin-top: 60px;
+  width: 435px;
+}
+
+#info-wrapper .title {
+  margin-bottom: 10px;
+}
+
+#info-wrapper .subtitle {
+  font-size: 19px;
+  max-width: 400px;
+  line-height: 1.25;
+  font-weight: lighter;
+}
+
+#topic-wrapper {
+  margin-top: 45px;
+  width: 435px;
+}
+
+#topic-wrapper .topic {
+  margin-bottom: 35px;
+}
+
+#topic-wrapper .topic .title {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 767.98px) {
+  .hero {
+    margin-bottom: 30px !important;
+  }
+
+  #info-wrapper,
+  #topic-wrapper {
+    width: 345px;
+  }
+}
+
+#apply-bg {
+  background: url(/images/path.svg?ad2b643b35d582bf17f0e914d1abc633);
+  height: 100%;
+}
+

@@ -49177,13 +49177,21 @@ if (token) {
 
 /***/ }),
 
+/***/ "./resources/sass/pages/team.scss":
+/*!****************************************!*\
+  !*** ./resources/sass/pages/team.scss ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!******************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/pages/home.scss ./resources/sass/pages/about.scss ./resources/sass/pages/apply.scss ***!
-  \******************************************************************************************************************************************************************/
-/*!**********************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/pages/home.scss ***!
-  \**********************************************************************************************/
+/*!***************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/pages/home.scss ./resources/sass/pages/about.scss ./resources/sass/pages/apply.scss ./resources/sass/pages/team.scss ***!
+  \***************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -49191,10 +49199,8 @@ __webpack_require__(/*! E:\Documents\GitHub\evanstonempire\resources\js\app.js *
 __webpack_require__(/*! E:\Documents\GitHub\evanstonempire\resources\sass\app.scss */"./resources/sass/app.scss");
 __webpack_require__(/*! E:\Documents\GitHub\evanstonempire\resources\sass\pages\home.scss */"./resources/sass/pages/home.scss");
 __webpack_require__(/*! E:\Documents\GitHub\evanstonempire\resources\sass\pages\about.scss */"./resources/sass/pages/about.scss");
-module.exports = __webpack_require__(/*! E:\Documents\GitHub\evanstonempire\resources\sass\pages\apply.scss */"./resources/sass/pages/apply.scss");
-__webpack_require__(/*! /Users/988244/Documents/sorin/evanston-empire/resources/js/app.js */"./resources/js/app.js");
-__webpack_require__(/*! /Users/988244/Documents/sorin/evanston-empire/resources/sass/app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! /Users/988244/Documents/sorin/evanston-empire/resources/sass/pages/home.scss */"./resources/sass/pages/home.scss");
+__webpack_require__(/*! E:\Documents\GitHub\evanstonempire\resources\sass\pages\apply.scss */"./resources/sass/pages/apply.scss");
+module.exports = __webpack_require__(/*! E:\Documents\GitHub\evanstonempire\resources\sass\pages\team.scss */"./resources/sass/pages/team.scss");
 
 
 /***/ })
