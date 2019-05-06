@@ -11,9 +11,10 @@
     <body>
     	<div id="app">
             <div class="header-hero-bg">
-    	@include('layouts.header')	
-        @yield('content')
-        @include('layouts.footer')
+            	@include('layouts.main.header')	
+                @yield('content')
+                @include('layouts.main.footer')
+            {{-- Interior div is closed inside the content --}}
         </div>
         @yield('scripts')
         <script src="{{ asset('js/app.js') }}"></script>

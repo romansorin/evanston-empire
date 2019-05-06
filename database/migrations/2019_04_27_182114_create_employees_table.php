@@ -20,7 +20,6 @@ class CreateEmployeesTable extends Migration
             $table->string('university')->nullable();
             $table->string('city_name')->nullable();
             $table->string('state_name')->nullable();
-            $table->text('description')->nullable();
             $table->timestamps();
         });
     }

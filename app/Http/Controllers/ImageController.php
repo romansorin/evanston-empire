@@ -9,83 +9,54 @@
 namespace App\Http\Controllers;
 
 use App\Image;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 
 class ImageController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    public function _construct() {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
-        //
+        $images = Image::all();
+        return view('images.index', compact('images'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
-        //
+        return view('images.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
+    public function store()
     {
-        //
+
+        $attributes = request()->validate([
+            'file_name' => ['required', 'string'],
+            'file' => ['image', 'required'],
+            'image_description' => ['nullable', 'string']
+        ]);
+
+        request()->file->storeAs('public/images/', request()->file_name);
+
+        Image::create(request(['file_name', 'image_description']));
+
+        return redirect('/dashboard/images');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Image  $image
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Image $image)
-    {
-        //
+    public function edit($filename) {
+        $image = Storage::get("public/images/$filename"); // need to think this through
+
+        return view('images.edit', compact('image'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Image  $image
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Image $image)
+    public function destroy($filename)
     {
-        //
-    }
+     
+        Storage::delete("public/images/$filename");
+        Image::where('file_name', $filename)->first()->delete();
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Image  $image
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Image $image)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Image  $image
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Image $image)
-    {
-        //
+        return redirect('/dashboard/images');
     }
 }

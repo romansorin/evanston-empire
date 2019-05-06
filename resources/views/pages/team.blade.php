@@ -18,6 +18,8 @@
 		<div class="row section-heading">
 			<div class="col-12">
 				<h3 class="title">Heading Title</h3>
+			<img src="{{ asset("storage/images/$image->filename") }}" style="width: 200px; height: 200px" alt="">
+			<a href="/dashboard/images/{{ $image->filename }}/edit">Edit</a>
 			</div>
 		</div>
 	</section>

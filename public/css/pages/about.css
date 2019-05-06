@@ -11,8 +11,7 @@
   overflow: hidden;
 }
 
-.img-fluid-container img {
-  -webkit-transform: translateY(-172px);
-          transform: translateY(-172px);
+#about-extended {
+  margin-top: 65px;
 }
 
