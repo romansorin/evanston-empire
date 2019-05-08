@@ -2,7 +2,7 @@
     <div class="container text-center text-md-left">
         <div class="row text-center text-md-left mt-3 pb-3">
             <div class="col-md-6 col-lg-4 col-xl-4 mx-auto mt-3">
-                <h1 class="mb-4 pt-0 mt-0 weight-semibold">Evanston Empire</h1>
+                <h1 class="mb-4 pt-0 mt-0 weight-semibold">LOGO</h1>
                 <div class="mt-3 mb-0">
                     <p>123 Main St., New York, NY 10012</p>
                     <p>info@evanstonempire.com</p>
