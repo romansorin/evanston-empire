@@ -1,14 +1,14 @@
 <div class="header-wrapper container">
-	<nav class="navbar navbar-expand-lg">
+	<nav class="navbar navbar-expand-lg pl-0 pr-0">
 		{{-- <a class="navbar-brand" href="/">Navbar</a> --}}
 
-		<button class="ml-auto navbar-toggler hamburger" type="button"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<button class="ml-auto navbar-toggler hamburger hamburger--stand" type="button" id="menu-toggle" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="hamburger-box">
 				  <span class="hamburger-inner"></span>
 				</span>
 			  </button>
 
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<div class="collapse navbar-collapse" id="menu">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
 					<a class="nav-link" href="/what-we-do">What We Do</a>

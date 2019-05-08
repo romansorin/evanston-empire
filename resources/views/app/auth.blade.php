@@ -23,11 +23,6 @@
         @include('layouts.auth.footer')
         </div> 
         </div>
-<<<<<<< HEAD:resources/views/layouts/app.blade.php
-        <script src="{{ asset('js/app.js') }}"></script>
-        @yield('scripts')
-    </body>
-=======
         </div>
     @endauth
     </div>
@@ -38,5 +33,4 @@
     <script src="{{ asset('js/dashboard/dashboard.js') }}"></script>
     <script src="{{ asset('js/dashboard/file-upload.js') }}"></script>
 </body>
->>>>>>> frontend:resources/views/app/auth.blade.php
 </html>

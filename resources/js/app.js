@@ -1,5 +1,4 @@
 require('./bootstrap');
-
 window.Vue = require('vue');
 
 // const files = require.context('./', true, /\.vue$/i);
@@ -7,4 +6,9 @@ window.Vue = require('vue');
 
 const app = new Vue({
     el: '#app'
+});
+
+
+document.querySelector('.navbar-toggler').addEventListener('click', function () {
+    document.querySelector('.navbar-toggler').classList.toggle('is-active');
 });

@@ -14508,7 +14508,7 @@ $(".center").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   dots: true,
-  speed: 500,
+  speed: 600,
   infinite: true,
   mobileFirst: true,
   centerMode: true,
@@ -14547,7 +14547,7 @@ $(".center").slick({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/988244/Documents/sorin/evanston-empire/resources/js/slick.js */"./resources/js/slick.js");
+module.exports = __webpack_require__(/*! E:\Documents\GitHub\evanstonempire\resources\js\slick.js */"./resources/js/slick.js");
 
 
 /***/ })

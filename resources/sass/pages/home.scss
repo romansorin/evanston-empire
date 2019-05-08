@@ -13,6 +13,52 @@
   }
 }
 
+.hamburger-inner {
+  background-color: $white;
+
+  &::after {
+    background-color: $white;
+  }
+
+  &::before {
+    background-color: $white;
+
+  }
+}
+
+.hamburger.is-active .hamburger-inner {
+  &::after {
+    background-color: $white;
+  }
+
+  &::before {
+    background-color: $white;
+
+  }
+}
+
+.hamburger.is-active .hamburger-inner::before {
+  &::after {
+    background-color: $white;
+  }
+
+  &::before {
+    background-color: $white;
+
+  }
+}
+
+.hamburger.is-active .hamburger-inner::after {
+  &::after {
+    background-color: $white;
+  }
+
+  &::before {
+    background-color: $white;
+
+  }
+}
+
 .hero {
   min-height: 535px;
 }
@@ -42,6 +88,7 @@
     -webkit-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.24);
     -moz-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.24);
     box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.24);
+
     &:hover {
       -webkit-box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.30);
       -moz-box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.30);

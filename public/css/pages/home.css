@@ -10,6 +10,42 @@
   color: #fff !important;
 }
 
+.hamburger-inner {
+  background-color: #fff;
+}
+
+.hamburger-inner::after {
+  background-color: #fff;
+}
+
+.hamburger-inner::before {
+  background-color: #fff;
+}
+
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #fff;
+}
+
+.hamburger.is-active .hamburger-inner::before {
+  background-color: #fff;
+}
+
+.hamburger.is-active .hamburger-inner::before::after {
+  background-color: #fff;
+}
+
+.hamburger.is-active .hamburger-inner::before::before {
+  background-color: #fff;
+}
+
+.hamburger.is-active .hamburger-inner::after::after {
+  background-color: #fff;
+}
+
+.hamburger.is-active .hamburger-inner::after::before {
+  background-color: #fff;
+}
+
 .hero {
   min-height: 535px;
 }

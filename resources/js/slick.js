@@ -8,7 +8,7 @@ $(".center").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     dots: true,
-    speed: 500,
+    speed: 600,
     infinite: true,
     mobileFirst: true,
     centerMode: true,

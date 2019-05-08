@@ -1,5 +1,11 @@
 // Custom-hamburger settings
-// ...
+$hamburger-padding-x           : 12px;
+$hamburger-padding-y           : 20px;
+$hamburger-layer-width         : 25px;
+$hamburger-layer-height        : 4px;
+$hamburger-layer-spacing       : 5px;
+$hamburger-layer-color         : #333;
+$hamburger-layer-border-radius : 4px;
 
 // Hamburgers
 @import "~hamburgers/_sass/hamburgers/hamburgers";

@@ -6,7 +6,7 @@
 @section('title', 'Home')
 @section('content')
 <div class="container">
-    <div class="jumbotron hero pl-0">
+    <div class="jumbotron hero pl-md-0">
         <div class="row">
             <div class="col-md-6 col-sm-10">
                 <h1 class="title title--light weight-semibold">Your <span class="weight-bold">next job</span><br />is
@@ -107,7 +107,7 @@
                         engine.</p>
                 </blockquote>
             </div>
-            <div class="col-4" id="what-we-do-info">
+            <div class="col-md-4 col-12" id="what-we-do-info">
                 <h3 class="title">Make your success as simple as you can clap</h3>
                 <p class="subtitle">Writing extra info here to simulate these types of text blocks to illustrate the
                     idea of more content to sell someone

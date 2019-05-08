@@ -1,17 +1,32 @@
-.slick-slider {
-    overflow: hidden;
-    margin-top: 50px;
-    .slick-slide {
-        padding: 1.5rem;
-        width: 435px;
-        height: 550px;
-        .employee-photo {
-            width: 435px;
-            height: 550px;
-        }
-    }
-    .slick-current {
-        // height: 605px;
-        // width: 510px;
+.slider {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.1s ease;
+    -webkit-transition: opacity 1.1s ease;
+    &.slick-initialized {
+        visibility: visible;
+        opacity: 1;    
     }
 }
+
+.slick-slider {
+  overflow: hidden;
+
+  .slick-slide {
+    padding: 2.2rem;
+    .employee-photo {
+      -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.14);
+      -moz-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.14);
+      box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.14);
+      width: 313px;
+      height: 391px;
+    }
+  }
+
+  .slick-current {
+    .employee-photo {
+        -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.43);
+        -moz-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.43);
+        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.43);
+  }
+}}

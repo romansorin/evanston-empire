@@ -16,6 +16,52 @@
   }
 }
 
+.hamburger-inner {
+  background-color: $white;
+
+  &::after {
+    background-color: $white;
+  }
+
+  &::before {
+    background-color: $white;
+
+  }
+}
+
+.hamburger.is-active .hamburger-inner {
+  &::after {
+    background-color: $white;
+  }
+
+  &::before {
+    background-color: $white;
+
+  }
+}
+
+.hamburger.is-active .hamburger-inner::before {
+  &::after {
+    background-color: $white;
+  }
+
+  &::before {
+    background-color: $white;
+
+  }
+}
+
+.hamburger.is-active .hamburger-inner::after {
+  &::after {
+    background-color: $white;
+  }
+
+  &::before {
+    background-color: $white;
+
+  }
+}
+
 .hero {
   height: 415px;
   display: flex;
@@ -38,6 +84,9 @@
 
 #employees-heading {
     margin-top: 200px;
+    @media only screen and (max-width: 576px) {
+      margin-top: 25px;
+    }
     .title {
         font-size: 32px;
     }
