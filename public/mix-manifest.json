@@ -5,5 +5,6 @@
     "/css/pages/about.css": "/css/pages/about.css",
     "/css/pages/apply.css": "/css/pages/apply.css",
     "/css/pages/team.css": "/css/pages/team.css",
+    "/js/header.js": "/js/header.js",
     "/js/slick.js": "/js/slick.js"
 }

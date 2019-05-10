@@ -19,6 +19,7 @@
             {{-- header-hero-bg div is closed inside the content --}}
         </div>
         <script src="{{ asset('js/app.js') }}"></script>
+        <script src="{{ asset('js/header.js') }}"></script>
         @yield('scripts')
 </body>
 
