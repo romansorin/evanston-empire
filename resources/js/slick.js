@@ -40,3 +40,5 @@ $(".center").slick({
         }
     ]
 });
+
+$(".gallery-slider").slick({});
