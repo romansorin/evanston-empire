@@ -12,7 +12,6 @@
     </div>
 </div>
 </div>
-</div>
 <div class="container">
     <section class="main-content mt-n5">
         <div class="row section-content">
@@ -263,8 +262,4 @@
             </div>
     </section>
 </div>
-@endsection
-
-@section('scripts')
-<script src="{{ asset('js/header.js') }}"></script>
 @endsection
