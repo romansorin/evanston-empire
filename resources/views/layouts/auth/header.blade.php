@@ -12,12 +12,6 @@
             <li class="nav-item nav-profile dropdown">
                 <a aria-expanded="false" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
                     id="profileDropdown">
-                    <div class="nav-profile-img">
-                        {{-- <img alt="image" src="images/faces/face1.jpg">
-                            <span class="availability-status online">
-                            </span>
-                        </img> --}}
-                    </div>
                     <div class="nav-profile-text">
                         <p class="mb-1 text-black">
                             {{ auth()->user()->name }}

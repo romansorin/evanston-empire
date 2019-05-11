@@ -3,8 +3,7 @@
         <li class="nav-item nav-profile">
             <a class="nav-link">
                 <div class="nav-profile-image">
-                    {{-- <img alt="profile" src="images/faces/face1.jpg">
-                    </img> --}}
+                        <img alt="image" src="{{ asset("storage/images/" . auth()->user()->name . "") }}">
                 </div>
                 <div class="nav-profile-text d-flex flex-column">
                     <span class="font-weight-bold mb-2">
