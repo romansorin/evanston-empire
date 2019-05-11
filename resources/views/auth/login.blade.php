@@ -28,7 +28,6 @@
                                     <small class="text-danger">
                                         {{ $errors->first('username') }}
                                     </small>
-                                </input>
                             </div>
                             <div class="form-group">
                                 <label for="password">
@@ -38,7 +37,6 @@
                                     <small class="text-danger">
                                         {{ $errors->first('password') }}
                                     </small>
-                                </input>
                             </div>
                             <div class="mt-3">
                                 <button class="btn btn-block btn-gradient-primary btn-lg weight-medium auth-form-btn" type="submit">

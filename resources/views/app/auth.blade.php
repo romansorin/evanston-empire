@@ -30,7 +30,6 @@
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/dashboard/off-canvas.js') }}"></script>
     <script src="{{ asset('js/dashboard/misc.js') }}"></script>
-    <script src="{{ asset('js/dashboard/dashboard.js') }}"></script>
     <script src="{{ asset('js/dashboard/file-upload.js') }}"></script>
 </body>
 </html>
