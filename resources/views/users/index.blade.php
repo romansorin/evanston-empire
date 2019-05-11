@@ -83,6 +83,7 @@
                                        
                                     </td>
                                 </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
@@ -91,8 +92,6 @@
         </div>
     </div>
 </div>
-
-@endforeach
 <div class="mt-4 float-right">
     {{ $users->links() }}
 </div>
