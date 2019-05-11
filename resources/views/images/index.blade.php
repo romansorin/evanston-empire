@@ -8,7 +8,7 @@
                 <i class="mdi mdi-home"></i>                 
               </span> Images
         </h3>
-        <a href="/dashboard/images/create" class="btn btn-gradient-primary ml-auto" role="button">Upload New</a>
+        <a href="/dashboard/images/create" class="btn btn-sm btn-primary ml-auto" role="button">Upload New</a>
     </div>
     <div class="row">
         @foreach ($images as $image)

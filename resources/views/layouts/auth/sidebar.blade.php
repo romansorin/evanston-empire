@@ -8,7 +8,7 @@
                 </div>
                 <div class="nav-profile-text d-flex flex-column">
                     <span class="font-weight-bold mb-2">
-                            sss
+                            {{ auth()->user()->name }}
                     </span>
                     <span class="text-secondary text-small">
                         Employee

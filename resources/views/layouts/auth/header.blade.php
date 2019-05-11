@@ -10,7 +10,8 @@
     <div class="navbar-menu-wrapper d-flex align-items-stretch">
         <ul class="navbar-nav navbar-nav-right">
             <li class="nav-item nav-profile dropdown">
-                <a aria-expanded="false" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="profileDropdown">
+                <a aria-expanded="false" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+                    id="profileDropdown">
                     <div class="nav-profile-img">
                         {{-- <img alt="image" src="images/faces/face1.jpg">
                             <span class="availability-status online">
@@ -31,17 +32,20 @@
                     </a>
                     <div class="dropdown-divider">
                     </div>
-
-                    <a class="dropdown-item" href="{{auth()->logout()}}">
+                    <form action="{{ route('logout') }}" method="POST" id="logout-form">
+                        @csrf
+                        <a class="dropdown-item"
+                            onclick="event.preventDefault(); document.querySelector('#logout-form').submit();" href="#">
                             <i class="mdi mdi-logout mr-2 text-primary">
                             </i>
                             Log out
                         </a>
-               
+                    </form>
                 </div>
             </li>
         </ul>
-        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" data-toggle="offcanvas" type="button">
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" data-toggle="offcanvas"
+            type="button">
             <span class="mdi mdi-menu">
             </span>
         </button>

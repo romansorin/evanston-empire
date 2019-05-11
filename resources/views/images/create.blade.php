@@ -29,7 +29,7 @@
               <input type="text" class="form-control {{ $errors->has('file') ? 'is-invalid' : ''}} form-control-lg file-upload-info pl-3"
                 disabled placeholder="Original File">
               <span class="input-group-append">
-                    <button class="file-upload-browse btn btn-sm btn-gradient-primary" type="button">Upload</button>
+                    <button class="file-upload-browse btn btn-sm btn-primary" type="button">Upload</button>
                 </span>
             </div>
             <small class="text-danger">{{ $errors->first('file') }}</small>
