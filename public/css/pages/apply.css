@@ -39,8 +39,25 @@
   }
 }
 
+@media (max-width: 575.98px) {
+  #info-wrapper,
+  #topic-wrapper {
+    width: 300px;
+  }
+
+  #info-wrapper .subtitle,
+  #topic-wrapper .subtitle {
+    max-width: 270px;
+  }
+
+  .desc {
+    max-width: 270px;
+  }
+}
+
 #apply-bg {
   background: url(/images/path.svg?ad2b643b35d582bf17f0e914d1abc633);
   height: 100%;
+  overflow-x: hidden;
 }
 

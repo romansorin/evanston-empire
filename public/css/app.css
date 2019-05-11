@@ -581,8 +581,8 @@ pre code {
 
 .container {
   width: 100%;
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -607,14 +607,14 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1140px;
   }
 }
 
 .container-fluid {
   width: 100%;
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -622,8 +622,8 @@ pre code {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -8px;
-  margin-left: -8px;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .no-gutters {
@@ -709,8 +709,8 @@ pre code {
 .col-1 {
   position: relative;
   width: 100%;
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .col {
@@ -4858,23 +4858,23 @@ input[type=button].btn-block {
 }
 
 .card-deck .card {
-  margin-bottom: 8px;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 576px) {
   .card-deck {
     flex-flow: row wrap;
-    margin-right: -8px;
-    margin-left: -8px;
+    margin-right: -15px;
+    margin-left: -15px;
   }
 
   .card-deck .card {
     display: flex;
     flex: 1 0 0%;
     flex-direction: column;
-    margin-right: 8px;
+    margin-right: 15px;
     margin-bottom: 0;
-    margin-left: 8px;
+    margin-left: 15px;
   }
 }
 
@@ -4884,7 +4884,7 @@ input[type=button].btn-block {
 }
 
 .card-group > .card {
-  margin-bottom: 8px;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 576px) {
@@ -28419,9 +28419,15 @@ body {
   padding-right: 2.5rem;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
   .form-card {
-    width: 345px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 320px) {
+  .form-card {
+    width: 270px;
   }
 }
 
@@ -28494,6 +28500,10 @@ body {
   font-size: 18px;
 }
 
+.header-wrapper {
+  transition: all 0.3s ease-out;
+}
+
 .header-wrapper .navbar-nav {
   margin-top: 25px;
 }
@@ -28506,6 +28516,106 @@ body {
 
 .header-wrapper .navbar-nav .nav-link {
   color: #333 !important;
+}
+
+.hamburger-black .hamburger-inner {
+  background-color: #333;
+}
+
+.hamburger-black .hamburger-inner::after {
+  background-color: #333;
+}
+
+.hamburger-black .hamburger-inner::before {
+  background-color: #333;
+}
+
+.hamburger-black .hamburger.is-active .hamburger-inner::after {
+  background-color: #333;
+}
+
+.hamburger-black .hamburger.is-active .hamburger-inner::before {
+  background-color: #333;
+}
+
+.hamburger-black .hamburger.is-active .hamburger-inner::before::after {
+  background-color: #333;
+}
+
+.hamburger-black .hamburger.is-active .hamburger-inner::before::before {
+  background-color: #333;
+}
+
+.hamburger-black .hamburger.is-active .hamburger-inner::after::after {
+  background-color: #333;
+}
+
+.hamburger-black .hamburger.is-active .hamburger-inner::after::before {
+  background-color: #333;
+}
+
+.hamburger-white .hamburger-inner {
+  background-color: #fff;
+}
+
+.hamburger-white .hamburger-inner::after {
+  background-color: #fff;
+}
+
+.hamburger-white .hamburger-inner::before {
+  background-color: #fff;
+}
+
+.hamburger-white .hamburger.is-active .hamburger-inner::after {
+  background-color: #fff;
+}
+
+.hamburger-white .hamburger.is-active .hamburger-inner::before {
+  background-color: #fff;
+}
+
+.hamburger-white .hamburger.is-active .hamburger-inner::before::after {
+  background-color: #fff;
+}
+
+.hamburger-white .hamburger.is-active .hamburger-inner::before::before {
+  background-color: #fff;
+}
+
+.hamburger-white .hamburger.is-active .hamburger-inner::after::after {
+  background-color: #fff;
+}
+
+.hamburger-white .hamburger.is-active .hamburger-inner::after::before {
+  background-color: #fff;
+}
+
+/***** Mobile nav menu styles *****/
+
+nav.mobile {
+  display: block;
+  position: static;
+  top: 4.5rem;
+  width: 100%;
+  z-index: 3;
+  box-shadow: 0px 1px 3px -1px rgba(41, 70, 97, 0.2);
+  transition: all 0.25s ease-out;
+  padding-bottom: 1rem;
+  opacity: 0;
+}
+
+nav.mobile--open {
+  opacity: 1;
+}
+
+nav.mobile ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav.mobile ul a {
+  color: #333;
 }
 
 .form-default .form-group {
@@ -28599,6 +28709,19 @@ body {
 
 .slick-slider .slick-current .employee-photo {
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.43);
+}
+
+.gallery-slider {
+  max-height: 90vh;
+  margin-top: 50px;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 767.98px) {
+  .gallery-slider {
+    margin-top: 0;
+  }
 }
 
 .accordion {

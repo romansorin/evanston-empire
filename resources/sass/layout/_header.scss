@@ -1,4 +1,5 @@
 .header-wrapper {
+  transition: all 0.3s ease-out;
   .navbar-nav {
     margin-top: 25px;
 
@@ -11,5 +12,129 @@
     .nav-link {
       color: $main-black !important;
     }
+  }
+}
+
+.hamburger-black {
+  .hamburger-inner {
+    background-color: $main-black;
+  
+    &::after {
+      background-color: $main-black;
+    }
+  
+    &::before {
+      background-color: $main-black;
+  
+    }
+  }
+  
+  .hamburger.is-active .hamburger-inner {
+    &::after {
+      background-color: $main-black;
+    }
+  
+    &::before {
+      background-color: $main-black;
+  
+    }
+  }
+  
+  .hamburger.is-active .hamburger-inner::before {
+    &::after {
+      background-color: $main-black;
+    }
+  
+    &::before {
+      background-color: $main-black;
+  
+    }
+  }
+  
+  .hamburger.is-active .hamburger-inner::after {
+    &::after {
+      background-color: $main-black;
+    }
+  
+    &::before {
+      background-color: $main-black;
+  
+    }
+  }
+}
+
+.hamburger-white {
+  .hamburger-inner {
+    background-color: $white;
+  
+    &::after {
+      background-color: $white;
+    }
+  
+    &::before {
+      background-color: $white;
+  
+    }
+  }
+  
+  .hamburger.is-active .hamburger-inner {
+    &::after {
+      background-color: $white;
+    }
+  
+    &::before {
+      background-color: $white;
+  
+    }
+  }
+  
+  .hamburger.is-active .hamburger-inner::before {
+    &::after {
+      background-color: $white;
+    }
+  
+    &::before {
+      background-color: $white;
+  
+    }
+  }
+  
+  .hamburger.is-active .hamburger-inner::after {
+    &::after {
+      background-color: $white;
+    }
+  
+    &::before {
+      background-color: $white;
+  
+    }
+  }
+}
+
+
+
+/***** Mobile nav menu styles *****/
+
+nav.mobile {
+  display: block;
+  position: static;
+  top: 4.5rem;
+  width: 100%;
+  z-index: 3;
+  box-shadow: 0px 1px 3px -1px rgba(41, 70, 97, 0.2);
+  transition: all 0.25s ease-out;
+  padding-bottom: 1rem;
+  opacity: 0;
+  
+}
+nav.mobile--open {
+  opacity: 1;
+}
+nav.mobile ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; 
+  a {
+    color: $main-black;
   }
 }
