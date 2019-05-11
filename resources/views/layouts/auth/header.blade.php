@@ -31,14 +31,13 @@
                     </a>
                     <div class="dropdown-divider">
                     </div>
-                    <form action="/logout" method="POST" id="logout-form">
-                        @csrf     
-                        <a class="dropdown-item" onclick="event.preventDefault(); document.querySelector('#logout-form').submit();" href="/logout">
+
+                    <a class="dropdown-item" href="{{auth()->logout()}}">
                             <i class="mdi mdi-logout mr-2 text-primary">
                             </i>
                             Log out
                         </a>
-                    </form>
+               
                 </div>
             </li>
         </ul>

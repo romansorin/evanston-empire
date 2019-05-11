@@ -11,7 +11,6 @@
         @yield('stylesheets')  
 </head>
 <body>
-	<div id="app">
     @auth
         <div class="container-scroller">
         @include('layouts.auth.header')
@@ -26,7 +25,6 @@
         </div>
         </div>
     @endauth
-    </div>
     @yield('scripts')
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/dashboard/off-canvas.js') }}"></script>
