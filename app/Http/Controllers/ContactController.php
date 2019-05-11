@@ -8,7 +8,7 @@ use App\Mail\ContactSubmitted;
 
 class ContactController extends Controller
 {
-    private $toMail = 'rmaximsorin@gmail.com';
+    private $toMail = 'coltonhorn2021@u.northwestern.edu';
 
     public function store()
     {
