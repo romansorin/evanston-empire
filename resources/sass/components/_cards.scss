@@ -36,9 +36,12 @@
     padding: 2.25rem;
     padding-right: 2.5rem;
   }
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(xs) {
   
-      width: 345px;
+      width: 300px;
 
+  }
+  @media (max-width: 320px) {
+    width: 270px;
   }
 }
