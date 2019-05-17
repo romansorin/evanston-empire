@@ -15,9 +15,6 @@
                     and real opportunities.</h2>
                 <button class="btn cta-btn-light weight-semibold">Get in touch</button>
             </div>
-            <div class="col-6">
-
-            </div>
         </div>
     </div>
 </div>
@@ -26,7 +23,7 @@
     <section class="main-content">
         <div class="row section-heading">
             <div class="col-12 text-center">
-                <h3 class="title weight-semibold">Explore Our Opportunities</h3>
+                <h3 class="title weight-semibold">Position Perks</h3>
                 <div class="border-bottom-purple ml-auto mr-auto"></div>
             </div>
         </div>
@@ -40,8 +37,7 @@
                     </div>
                     <div class="card-body text-center">
                         <div class="card-info mx-auto">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <a href="#" class="weight-semibold">Go somewhere</a>
+                            <h5 class="card-title">Flexibility</h5>
                         </div>
                     </div>
                 </div>
@@ -55,8 +51,7 @@
                     </div>
                     <div class="card-body text-center">
                         <div class="card-info mx-auto">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <a href="#" class="weight-semibold">Go somewhere</a>
+                            <h5 class="card-title">Experience</h5>
                         </div>
                     </div>
                 </div>
@@ -70,8 +65,7 @@
                     </div>
                     <div class="card-body text-center">
                         <div class="card-info mx-auto">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <a href="#" class="weight-semibold">Go somewhere</a>
+                            <h5 class="card-title">Income</h5>
                         </div>
                     </div>
                 </div>
@@ -85,42 +79,10 @@
                     </div>
                     <div class="card-body text-center">
                         <div class="card-info mx-auto">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <a href="#" class="weight-semibold">Go somewhere</a>
+                            <h5 class="card-title">Championship Team</h5>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="main-content">
-        <div class="row section-heading">
-            <div class="col-12 text-center">
-                <h3 class="title weight-semibold">What We Do</h3>
-                <div class="border-bottom-purple ml-auto mr-auto"></div>
-            </div>
-        </div>
-        <div class="row section-content">
-            <div class="col-12 text-center">
-                <blockquote class="blockquote ml-auto mr-auto">
-                    <p class="blockquote-text weight-light--italic">Profit is the ignition system of your economic
-                        engine.</p>
-                </blockquote>
-            </div>
-            <div class="col-md-4 col-12" id="what-we-do-info">
-                <h3 class="title">Make your success as simple as you can clap</h3>
-                <p class="subtitle">Writing extra info here to simulate these types of text blocks to illustrate the
-                    idea of more content to sell someone
-                    on a product. And more, for a fourth line</p>
-                <a href class="link weight-bold">View more benefits <span class="oi oi-arrow-right" title="arrow right"
-                        aria-hidden="true" id="view-more-arrow"></span></a>
-            </div>
-            <div class="col-8">
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-12">
-                <button class="btn cta-btn-primary">Learn more</button>
             </div>
         </div>
     </section>
