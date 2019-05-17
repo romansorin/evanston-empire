@@ -5,9 +5,6 @@
     <div class="jumbotron hero pl-0 pr-0">
         <div class="col-12 text-center" id="faq-wrapper">
             <h1 class="title weight-semibold mx-auto">Frequently Asked Questions</h1>
-            <h2 class="subtitle mx-auto">Need help? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</h2>
         </div>
     </div>
 </div>
