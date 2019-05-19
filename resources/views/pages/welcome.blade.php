@@ -63,7 +63,7 @@
                             src="https://images.pexels.com/photos/2097116/pexels-photo-2097116.jpeg?cs=srgb&dl=architectural-design-architecture-building-2097116.jpg&fm=jpg"
                             alt="filler image">
                     </div>
-                    <div class="card-body text-center">
+                    <div class="card-body container text-center">
                         <div class="card-info mx-auto">
                             <h5 class="card-title">Income</h5>
                         </div>
@@ -77,7 +77,7 @@
                             src="https://images.pexels.com/photos/2097116/pexels-photo-2097116.jpeg?cs=srgb&dl=architectural-design-architecture-building-2097116.jpg&fm=jpg"
                             alt="filler image">
                     </div>
-                    <div class="card-body text-center">
+                    <div class="card-body container text-center">
                         <div class="card-info mx-auto">
                             <h5 class="card-title">Championship Team</h5>
                         </div>

@@ -12,7 +12,7 @@
 
   .card {
     @extend %card;
-    height: 375px;
+    height: 350px;
     width: 255px;
     margin-bottom: 45px;
     overflow: hidden;
@@ -22,7 +22,7 @@
   }
   .card-img {
     border-radius: 14px 14px 0px 0px;
-    height: 235px;
+    height: 225px;
     overflow: hidden;
   }
   

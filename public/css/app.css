@@ -28393,7 +28393,7 @@ body {
 }
 
 #explore-opportunities-card-wrapper .card {
-  height: 375px;
+  height: 350px;
   width: 255px;
   margin-bottom: 45px;
   overflow: hidden;
@@ -28405,7 +28405,7 @@ body {
 
 #explore-opportunities-card-wrapper .card-img {
   border-radius: 14px 14px 0px 0px;
-  height: 235px;
+  height: 225px;
   overflow: hidden;
 }
 
@@ -28487,7 +28487,7 @@ body {
 }
 
 .footer-wrapper {
-  background-color: #333;
+  background-color: #34363a;
   color: #fff;
 }
 
