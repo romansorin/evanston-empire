@@ -3,6 +3,10 @@
 <link rel="stylesheet" href="{{ asset('css/pages/home.css') }}">
 @endsection
 
+@php
+$logo = asset('images/white-evanston-logo.png');
+@endphp
+
 @section('title', 'Home')
 @section('content')
 <div class="container">

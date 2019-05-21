@@ -1,7 +1,12 @@
 <div class="header-wrapper container">
 	<nav class="navbar navbar-expand-lg pl-0 pr-0 ">
-		<a class="navbar-brand" href="/">LOGO</a>
-		<ul style="list-style: none">
+		@isset($logo)
+		<a class="navbar-brand mt-2" href="/"><img class="header-logo logo mt-0 pl-3" src="{{ $logo }}" alt="evanston empire"></a>
+		@else
+		<a class="navbar-brand mt-2" href="/"><img class="header-logo logo mt-0 pl-3" src="{{ asset('images/black-evanston-logo.png') }}"
+				alt="evanston empire"></a>
+		@endisset
+		<ul class="mb-0 list-unstyled">
 			<li class="mobile-nav">
 				<button class="ml-auto navbar-toggler hamburger hamburger--stand" type="button" id="menu-toggle"
 					data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false"

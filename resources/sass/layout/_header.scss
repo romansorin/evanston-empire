@@ -1,5 +1,9 @@
 .header-wrapper {
   transition: all 0.3s ease-out;
+  .navbar-brand {
+    margin-top: 25px;
+    max-width: 157px;
+  }
   .navbar-nav {
     margin-top: 25px;
 
@@ -17,47 +21,47 @@
 
 .hamburger-black {
   .hamburger-inner {
-    background-color: $main-black;
+    background-color: black;
   
     &::after {
-      background-color: $main-black;
+      background-color: black;
     }
   
     &::before {
-      background-color: $main-black;
+      background-color: black;
   
     }
   }
   
   .hamburger.is-active .hamburger-inner {
     &::after {
-      background-color: $main-black;
+      background-color: black;
     }
   
     &::before {
-      background-color: $main-black;
+      background-color:black;
   
     }
   }
   
   .hamburger.is-active .hamburger-inner::before {
     &::after {
-      background-color: $main-black;
+      background-color: black;
     }
   
     &::before {
-      background-color: $main-black;
+      background-color: black;
   
     }
   }
   
   .hamburger.is-active .hamburger-inner::after {
     &::after {
-      background-color: $main-black;
+      background-color: black;
     }
   
     &::before {
-      background-color: $main-black;
+      background-color: black;
   
     }
   }
@@ -111,7 +115,9 @@
   }
 }
 
-
+#menu {
+  margin-top: 30px;
+}
 
 /***** Mobile nav menu styles *****/
 

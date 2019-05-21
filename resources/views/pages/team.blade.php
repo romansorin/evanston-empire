@@ -3,7 +3,9 @@
 @section('stylesheets')
 <link rel="stylesheet" href="{{ asset('css/pages/team.css') }}">
 @endsection
-
+@php
+$logo = asset('images/white-evanston-logo.png');
+@endphp
 @section('content')
 
 <div class="container">

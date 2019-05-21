@@ -47,8 +47,8 @@
 						<hr>
 						<div class="contact">
 							<h5 class="contact-title weight-semibold">Contact Information</h5>
-							<p class="contact-text"><span class="oi oi-location" title="location" aria-hidden="true"></span>Address City, ST 33107</p>
-							<p class="contact-text"><span class="oi oi-phone" title="phone" aria-hidden="true"></span>+1 123 456 7890</p>
+							<p class="contact-text"><span class="oi oi-location" title="location" aria-hidden="true"></span>909 Davis St., Evanston, IL 60201</p>
+							<p class="contact-text"><span class="oi oi-phone" title="phone" aria-hidden="true"></span>+1 847 910 1699</p>
 							<p class="contact-text"><span class="oi oi-envelope-closed" title="envelope closed" aria-hidden="true"></span>info@evanstonempire.com</p>
 						</div>
 					</div>
