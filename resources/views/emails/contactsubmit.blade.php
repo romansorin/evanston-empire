@@ -1,6 +1,6 @@
 
 <div>
-You received a message from : {{ $name }}
+You received a message from: {{ $name }}
 
 <p>
 Name: {{ $name }}

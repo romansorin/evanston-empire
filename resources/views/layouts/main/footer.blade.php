@@ -2,11 +2,11 @@
     <div class="container text-center text-md-left">
         <div class="row text-center text-md-left mt-3 pb-3">
             <div class="col-md-6 col-lg-4 col-xl-4 mx-auto mt-3">
-                <h1 class="mb-4 pt-0 mt-0 weight-semibold">LOGO</h1>
+            <img class="mb-4 pt-0 mt-0 logo" alt="evanston empire" src="{{ asset('images/white-evanston-logo.png') }}">
                 <div class="mt-3 mb-0">
-                    <p>123 Main St., New York, NY 10012</p>
+                    <p>909 Davis St., Evanston, IL 60201</p>
+                    <p>+1 847 910 1699</p>
                     <p>info@evanstonempire.com</p>
-                    <p>123-456-7890</p>
                 </div>
             </div>
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
@@ -39,13 +39,10 @@
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                 <h6 class="mb-4 footer-heading weight-semibold">Social</h6>
                 <p>
-                    <a href="https://www.instagram.com">Instagram</a>
+                    <a href="https://www.instagram.com/evanston_empire">Instagram</a>
                 </p>
                 <p>
-                    <a href="https://www.twitter.com">Twitter</a>
-                </p>
-                <p>
-                    <a href="https://www.linkedin.com">LinkedIn</a>
+                    <a href="https://www.facebook.com/VectorMarketingEvanston">Facebook</a>
                 </p>
             </div>
         </div>

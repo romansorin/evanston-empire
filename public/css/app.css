@@ -28326,6 +28326,10 @@ body {
   border-bottom: 2px solid #DC90DC;
 }
 
+.logo {
+  max-width: 150px;
+}
+
 .cta-btn-primary,
 .cta-btn-light {
   height: 50px;
@@ -28393,7 +28397,7 @@ body {
 }
 
 #explore-opportunities-card-wrapper .card {
-  height: 375px;
+  height: 350px;
   width: 255px;
   margin-bottom: 45px;
   overflow: hidden;
@@ -28405,7 +28409,7 @@ body {
 
 #explore-opportunities-card-wrapper .card-img {
   border-radius: 14px 14px 0px 0px;
-  height: 235px;
+  height: 225px;
   overflow: hidden;
 }
 
@@ -28487,7 +28491,7 @@ body {
 }
 
 .footer-wrapper {
-  background-color: #333;
+  background-color: #34363a;
   color: #fff;
 }
 
@@ -28502,6 +28506,11 @@ body {
 
 .header-wrapper {
   transition: all 0.3s ease-out;
+}
+
+.header-wrapper .navbar-brand {
+  margin-top: 25px;
+  max-width: 157px;
 }
 
 .header-wrapper .navbar-nav {
@@ -28519,39 +28528,39 @@ body {
 }
 
 .hamburger-black .hamburger-inner {
-  background-color: #333;
+  background-color: black;
 }
 
 .hamburger-black .hamburger-inner::after {
-  background-color: #333;
+  background-color: black;
 }
 
 .hamburger-black .hamburger-inner::before {
-  background-color: #333;
+  background-color: black;
 }
 
 .hamburger-black .hamburger.is-active .hamburger-inner::after {
-  background-color: #333;
+  background-color: black;
 }
 
 .hamburger-black .hamburger.is-active .hamburger-inner::before {
-  background-color: #333;
+  background-color: black;
 }
 
 .hamburger-black .hamburger.is-active .hamburger-inner::before::after {
-  background-color: #333;
+  background-color: black;
 }
 
 .hamburger-black .hamburger.is-active .hamburger-inner::before::before {
-  background-color: #333;
+  background-color: black;
 }
 
 .hamburger-black .hamburger.is-active .hamburger-inner::after::after {
-  background-color: #333;
+  background-color: black;
 }
 
 .hamburger-black .hamburger.is-active .hamburger-inner::after::before {
-  background-color: #333;
+  background-color: black;
 }
 
 .hamburger-white .hamburger-inner {
@@ -28588,6 +28597,10 @@ body {
 
 .hamburger-white .hamburger.is-active .hamburger-inner::after::before {
   background-color: #fff;
+}
+
+#menu {
+  margin-top: 30px;
 }
 
 /***** Mobile nav menu styles *****/
