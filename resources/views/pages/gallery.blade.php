@@ -13,7 +13,7 @@
     <div class="slider" id="gallery-slider">
         @foreach($images as $image)
         <div class="photo-container">
-            <img class="d-block gallery-photo" src="{{ asset("storage/images/$image->file_name") }}">
+            <img class="d-block img-fluid gallery-photo" src="{{ asset("storage/images/$image->file_name") }}">
         </div>
         @endforeach
     </div>
