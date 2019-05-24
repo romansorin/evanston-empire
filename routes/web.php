@@ -11,7 +11,6 @@ Route::get('apply', function () {
 });
 Route::get('gallery', function () {
     $images = App\Image::where('image_description', 'gallery')->get();
-    dd($images);
     return view('pages.gallery', compact('images'));
 });
 Route::get('meet-the-team', function () {
