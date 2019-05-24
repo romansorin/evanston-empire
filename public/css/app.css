@@ -28733,8 +28733,8 @@ nav.mobile ul a {
 }
 
 #gallery-slider .photo-container {
-  width: 313px;
-  height: 391px;
+  max-width: 313px;
+  max-height: 391px;
 }
 
 .accordion {
