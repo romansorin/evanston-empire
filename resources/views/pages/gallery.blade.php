@@ -9,7 +9,7 @@
     </div>
 </div>
 </div>
-<div class="container">
+<div class="container-fluid">
     <div class="slider" id="gallery-slider">
         @foreach($images as $image)
         <div>

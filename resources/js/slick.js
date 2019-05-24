@@ -44,6 +44,7 @@ $("#gallery-slider").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     rows: 2,
+    autoplay: true,
     responsive: [{
             breakpoint: 1024,
             settings: {
