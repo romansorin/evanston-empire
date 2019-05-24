@@ -14540,8 +14540,8 @@ $(".center").slick({
 $("#gallery-slider").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
-  rows: 2,
-  autoplay: false,
+  rows: 3,
+  autoplay: true,
   responsive: [{
     breakpoint: 1024,
     settings: {
