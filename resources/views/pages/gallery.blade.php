@@ -11,8 +11,34 @@
         </div>
     </div>
 </div>
-<div class="container-fluid">
+<div class="container">
     <div class="row">
+        <div class="slider" id="gallery-slider">
+            <div class="photo-container">
+                <img class="img-fluid"
+                    src="https://images.pexels.com/photos/2291075/pexels-photo-2291075.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+            </div>
+            <div class="photo-container">
+                <img class="img-fluid"
+                    src="https://images.pexels.com/photos/2291075/pexels-photo-2291075.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+            </div>
+            <div class="photo-container">
+                <img class="img-fluid"
+                    src="https://images.pexels.com/photos/2291075/pexels-photo-2291075.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+            </div>
+            <div class="photo-container">
+                <img class="img-fluid"
+                    src="https://images.pexels.com/photos/2291075/pexels-photo-2291075.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+            </div>
+            <div class="photo-container">
+                <img class="img-fluid"
+                    src="https://images.pexels.com/photos/2291075/pexels-photo-2291075.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+            </div>
+            <div class="photo-container">
+                <img class="img-fluid"
+                    src="https://images.pexels.com/photos/2291075/pexels-photo-2291075.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+            </div>
+        </div>
         {{-- <div id="carousel" class="carousel slide gallery-slider" data-ride="carousel">
             <div class="carousel-inner">
                 @foreach($images as $image)
@@ -40,4 +66,8 @@
 </div> --}}
 </div>
 </div>
+@endsection
+
+@section('scripts')
+<script src="{{ asset('js/slick.js') }}"></script>
 @endsection
