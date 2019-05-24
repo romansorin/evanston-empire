@@ -14540,8 +14540,26 @@ $(".center").slick({
 $("#gallery-slider").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
-  dots: true,
-  arrows: true
+  rows: 2,
+  responsive: [{
+    breakpoint: 1024,
+    settings: {
+      slidesToShow: 3,
+      slidesToScroll: 3
+    }
+  }, {
+    breakpoint: 600,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2
+    }
+  }, {
+    breakpoint: 480,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  }]
 });
 
 /***/ }),
@@ -14553,7 +14571,7 @@ $("#gallery-slider").slick({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/988244/Documents/sorin/evanston-empire/resources/js/slick.js */"./resources/js/slick.js");
+module.exports = __webpack_require__(/*! E:\Documents\GitHub\evanstonempire\resources\js\slick.js */"./resources/js/slick.js");
 
 
 /***/ })
